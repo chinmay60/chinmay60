@@ -4,11 +4,20 @@ import Card from './Card'
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Aux from './Auxilliary'
-
+import Typography from "@material-ui/core/Typography";
 
 export default function FullWidthGrid(props) {
-
+  const featuredRepoList = []
+    let lastCommit
 const repositories = props.pinnedItems
+repositories
+      .map((n: any) => n.node)
+      .concat()
+      .sort((a: any, b: any) => (a.pushedAt < b.pushedAt ? 1 : -1))
+      .forEach((r: any) => featuredRepoList.push(r))
+  lastCommit =  moment(featuredRepoList[0].pushedAt).fromNow()
+
+
 const displayRepositories = Object.keys(repositories)
       .map((igKey) =>{
         const branchCount = repositories[igKey].node.refs.nodes.length
@@ -50,6 +59,12 @@ const displayRepositories = Object.keys(repositories)
 
 return (
         <Aux>
+
+        <Grid item xs={12}>
+            <Typography   variant="h5" component="h2">
+            {props.header}
+          </Typography> <h5>({lastCommit} )</h5>
+          </Grid>
           {displayRepositories}
         </Aux>
 )
