@@ -2,9 +2,11 @@
 
   margin-left: auto;
   margin-right: auto;
-  box-sizing: content-box;
-  max-width: 64rem;
+}
 
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -12,29 +14,42 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-@media screen and (max-width: 1060px){
+@media screen and (min-width: 1024px){
 .App {
-    max-width: 20rem;
+max-width: 64rem;
 }
 }
-
-
-
-.Bio {
-  width:100;
-  min-width: 620;
-  max-width:700;
-  min-height:507;
-  max-height: '100%';
-
-  color:"white";
-  border-radius:"10px";
-  padding-bottom:"0";
-  background-color:"#2b2d2d";
+@media screen and (max-width:1023px){
+.App {
+max-width: 24rem;
 }
-
+}
 
 html{
-  background-color: #999999 ;
+  background-color: #262828;
+}
+
+
+.App-header {
+  background-color: #23c455;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

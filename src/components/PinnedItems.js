@@ -6,6 +6,8 @@ import Aux from './Auxilliary'
 import Grid from '@material-ui/core/Grid';
 import Bioinfo from  './BioInfo'
 import { InMemoryCache } from '@apollo/client';
+import Header from './Header';
+
 
 const GET_REPO_INFO = gql`
 query  {
@@ -86,6 +88,8 @@ class PinnedItems extends Component {
 
   return(
 
+
+
     <Grid container alignItems="center">
 
 
@@ -103,7 +107,7 @@ class PinnedItems extends Component {
       </Query>
 
 
-    <Grid container  direction="row" spacing={3}  alignItems="center">
+    <Grid container  direction="row" spacing={4}  alignItems="center">
       <Query query={GET_REPO_INFO}>
         {({ loading, error, data }) => (
           <Aux>

@@ -31,7 +31,7 @@ const displayRepositories = Object.keys(repositories)
         const repoLink = repositories[igKey].url
         const demoLink = repositories[igKey].homepageUrl
         return (
-                  <Grid item key={repoLink}>
+                  <Grid item xs={12} sm={12} md={4} lg={4} key={repoLink}>
                   <Card
                     topics = {topics}
                     name={repositories[igKey].node.name}

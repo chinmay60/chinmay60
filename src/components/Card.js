@@ -28,8 +28,7 @@ const theme = createMuiTheme({
 
 const useStyles = makeStyles({
   root: {
-    width:325,
-    minWidth:310,
+  
     color:"white",
     borderRadius:"10px",
     paddingBottom:"0",

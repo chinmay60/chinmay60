@@ -34,10 +34,8 @@ const theme = createMuiTheme({
 
 const useStyles = makeStyles({
   root: {
-    width:325,
-    maxWidth: 360,
-    minWidth: 325,
-    height:550,
+
+
     color:"white",
     borderRadius:"10px",
     paddingBottom:"0",
@@ -74,8 +72,10 @@ const useStyles = makeStyles({
   },
 
   typography: {
+    textAlign:'left',
+    paddingTop: 30,
     nowrap : "true",
-    paddingLeft: 30,
+    paddingLeft: 10,
     color: 'white',
   },
 
@@ -130,14 +130,15 @@ export default function MediaCard(props) {
           </Typography>
 
           <Typography className={classes.typography} variant="body2" color="primary" component="p">
-              <div style = {{paddingBottom: 2, color: "grey", fontWeight: 650}}>
-              <LocationCityTwoToneIcon fontSize = "small" style={{  color: "white", }} /> {props.location}
+              <div style={{  display: 'flex',  alignItems: 'center', paddingBottom:8}}>
+              <LocationCityTwoToneIcon fontSize = "small" style={{  color: "white", paddingRight: 8, paddingBottom: 4 }} />
+              {props.location}
               </div>
-              <div style = {{paddingBottom: 2, color: "grey", fontWeight: 650}}>
-              <WorkTwoToneIcon style={{  color: "white",  }} fontSize = "small" /> {props.profession}
+              <div style={{  display: 'flex',  alignItems: 'center', paddingBottom:8}}>
+              <WorkTwoToneIcon style={{  color: "white", paddingRight: 8, paddingBottom: 4  }} fontSize = "small" />  {props.profession}
               </div>
-              <div style = {{paddingBottom: 2, color: "grey", fontWeight: 650}} >
-              <SchoolTwoToneIcon style={{  color: "white",  }}  fontSize = "small" /> {props.school}
+              <div style={{  display: 'flex',  alignItems: 'center'}}>
+              <SchoolTwoToneIcon style={{  color: "white", paddingRight: 8, paddingBottom: 4 }}  fontSize = "small" />  {props.school}
               </div>
           </Typography>
         </CardContent>
