@@ -1,0 +1,40 @@
+.App {
+
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: content-box;
+  max-width: 64rem;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media screen and (max-width: 1060px){
+.App {
+    max-width: 20rem;
+}
+}
+
+
+
+.Bio {
+  width:100;
+  min-width: 620;
+  max-width:700;
+  min-height:507;
+  max-height: '100%';
+
+  color:"white";
+  border-radius:"10px";
+  padding-bottom:"0";
+  background-color:"#2b2d2d";
+}
+
+
+html{
+  background-color: #999999 ;
+}
