@@ -17,10 +17,15 @@ jobs:
           npm install
           npm run-script build
         env:
-           REACT_APP_TOKEN: ${{ secrets.REACT_APP_TOKEN }}
+           REACT_APP_TOKEN: ${{secrets.REACT_APP_TOKEN }}
            CI: ""
 
       - name: Deploy 🚀
         uses: actions/setup-node@master
+        with:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: build
         env:
-          REACT_APP_TOKEN: ${{ secrets.REACT_APP_TOKEN }}
+          REACT_APP_TOKEN: ${{secrets.REACT_APP_TOKEN }}
+    
