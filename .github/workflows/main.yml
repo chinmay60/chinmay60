@@ -1,31 +1,27 @@
-name: chinmay60
-
+name: Build and Deploy
 on:
   push:
     branches:
       - master
-
 jobs:
-  build:
-
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false 
 
-    - name: Checkout
-      uses: actions/checkout@v1
+      - name: Install and Build 🔧
+        run: |
+          npm install
+          npm run-script build
+          env:
+             REACT_APP_TOKEN: ${{ secrets.REACT_APP_TOKEN }}
 
-    - name: Build
-      run: |
-        npm install
-        npm run-script build
-      env:
-        REACT_APP_TOKEN: ${{ secrets.REACT_APP_TOKEN }}
-        
-
-    - name: Deploy
-      uses: chinmay60/chinmay60
-      with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: build
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: dist
