@@ -17,7 +17,7 @@ jobs:
           npm install
           npm run-script build
         env:
-           REACT_APP_TOKEN: ${{secrets.REACT_APP_TOKEN }}
+           REACT_APP_TOKEN: ${{ secrets.REACT_APP_TOKEN }}
            CI: ""
 
 
