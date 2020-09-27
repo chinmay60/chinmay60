@@ -24,7 +24,7 @@ jobs:
         
 
     - name: Deploy
-      uses: https://chinmay60.github.io/chinmay60/
+      uses: chinmay60/chinmay60@releases/v3
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
