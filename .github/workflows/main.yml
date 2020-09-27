@@ -24,5 +24,5 @@ jobs:
       - name: Deploy 🚀
         uses: actions/setup-node@master
         with:
-          BRANCH: gh-pages
-          FOLDER: build
+          branch: gh-pages
+          local_dir: build
