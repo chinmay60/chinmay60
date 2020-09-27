@@ -20,12 +20,10 @@ jobs:
            REACT_APP_TOKEN: ${{secrets.REACT_APP_TOKEN }}
            CI: ""
 
+
       - name: Deploy 🚀
-        uses: actions/setup-node@master
+        uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: build
-        env:
-          REACT_APP_TOKEN: ${{secrets.REACT_APP_TOKEN }}
-    
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: build
