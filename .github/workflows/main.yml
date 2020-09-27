@@ -23,5 +23,5 @@ jobs:
       - name: Deploy 🚀
         uses: actions/setup-node@master
         with:
-          REACT_APP_TOKEN: ${{ secrets.REACT_APP_TOKEN }}
+          TOKEN: ${{ secrets.REACT_APP_TOKEN }}
           BRANCH: gh-pages
