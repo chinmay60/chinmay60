@@ -60,10 +60,13 @@ const displayRepositories = Object.keys(repositories)
 return (
         <Aux>
 
-        <Grid item xs={12}>
+        <Grid item style = {{paddingTop: '5%', paddingBottom: 0}} xs={12}>
+
             <Typography   variant="h5" component="h2">
-            {props.header}
-          </Typography> <h5>({lastCommit} )</h5>
+            <span style = {{color:'white', fontSize:20, paddingRight: 5}} > {props.header} </span>
+              <span style = {{color:'#d3d3d3', fontSize:15}} > (last commit {lastCommit})</span>
+          </Typography>
+
           </Grid>
           {displayRepositories}
         </Aux>

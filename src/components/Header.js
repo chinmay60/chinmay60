@@ -57,14 +57,14 @@ export default function FullWidthGrid() {
 
       <Toolbar style = {{paddingLeft:0, paddingRight:0}}>
 
-          <Typography variant="h6" className={classes.title}>
+          <Typography variant="h5" className={classes.title}>
           @chinmay60
           </Typography>
           {/*<button className='flex items-center justify-center p-1 px-2 font-bold tracking-wide uppercase transition duration-200 border-2 border-transparent rounded bg-gray-70 hover:bg-gray-50 hover:text-white focus:outline-none focus:border-gray-10'>
             <DocumentText className='w-4 h-4 mr-1' />
             resume
   </button>*/}
-  <Button color="inherit"><EmailIcon style={{color:"#4faeae"}}/>Email Me</Button>
+  <Button  variant="contained" color="primary" href = "Chinmay Vinchurkar: vinchucg@mail.uc.edu"><EmailIcon style={{color:"white"}}/>Email Me</Button>
 
   </Toolbar>
 </AppBar>

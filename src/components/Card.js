@@ -31,7 +31,7 @@ const useStyles = makeStyles({
   
     color:"white",
     borderRadius:"10px",
-    paddingBottom:"0",
+
     backgroundColor:"#555656",
 
   },

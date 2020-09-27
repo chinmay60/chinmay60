@@ -4,17 +4,18 @@ import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
 import Box from '@material-ui/core/Box';
 import { motion, AnimatePresence } from 'framer-motion'
-
+import { AccordionActions,Accordion,AccordionDetails, AccordionSummary } from '@material-ui/core';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
-
+import Button from '@material-ui/core/Button';
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import { red } from '@material-ui/core/colors';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { createMuiTheme,ThemeProvider  } from '@material-ui/core/styles';
-import Divider from "@material-ui/core/Divider";
+
 
 
 const theme = createMuiTheme({
@@ -36,9 +37,8 @@ const theme = createMuiTheme({
 const useStyles = makeStyles((theme) => ({
   root: {
 
-  minWidth: 325 ,
-  maxWidth:675,
-  minHeight:507,
+
+  minHeight:515,
   maxHeight: '100%',
 
   color:"white",
@@ -67,200 +67,82 @@ export default function RecipeReviewCard(props) {
     <div style = {{color: 'white', fontSize:30, textAlign: 'left', paddingBottom: 10}}> Bio
     </div>
     <Card className={classes.root} style={{backgroundColor:"#2b2d2d"}}>
-      <CardActions>
 
+<div style={{padding: '3%'}}>
           <Typography paragraph align="left" >
             {props.text}
 
           </Typography>
 
-      </CardActions>
-      <AnimatePresence exitBeforeEnter initial={false}>
-                    {readMore ? (
-                      <>
-                        <motion.div
-                          key='show less'
-                          initial={{ height: 0, opacity: 0 }}
-                          animate={{ height: 'auto', opacity: 1 }}
-                          exit={{ height: 0, opacity: 0 }}
-                          transition={{ duration: 0.3 }}
-                          className='grid grid-flow-row gap-4'
-                        >
-                          <button
-                            onClick={() => setReadMore(false)}
-                            className='flex items-center text-sm text-left transition-colors duration-200 hover:text-white text-gray-40'
-                          >
-                            <span className='ml-1'>show less</span>
-                          </button>
-                          <h3>
-                            <span
-                              role='img'
-                              aria-label='dice emoji'
-                              className='mr-1'
-                            >
-                              🎲️{' '}
-                            </span>
-                            My First App
-                          </h3>
-                          <p>
-                            I created my first real app,
-                            [BGQuickstart.com](https://bgquickstart.com),
-                            because I wanted a faster way to choose a start
-                            player when playing board games with friends. After
-                            teaching myself React, I realized I had fallen in
-                            love with the feeling of solving problems with code
-                            and immediately started planning my next app.
-                            I created my first real app,
-                            [BGQuickstart.com](https://bgquickstart.com),
-                            because I wanted a faster way to choose a start
-                            player when playing board games with friends. After
-                            teaching myself React, I realized I had fallen in
-                            love with the feeling of solving problems with code
-                            and immediately started planning my next app.
-                            I created my first real app,
-                            [BGQuickstart.com](https://bgquickstart.com),
-                            because I wanted a faster way to choose a start
-                            player when playing board games with friends. After
-                            teaching myself React, I realized I had fallen in
-                            love with the feeling of solving problems with code
-                            and immediately started planning my next app.
-                            I created my first real app,
-                            [BGQuickstart.com](https://bgquickstart.com),
-                            because I wanted a faster way to choose a start
-                            player when playing board games with friends. After
-                            teaching myself React, I realized I had fallen in
-                            love with the feeling of solving problems with code
-                            and immediately started planning my next app.
-                            I created my first real app,
-                            [BGQuickstart.com](https://bgquickstart.com),
-                            because I wanted a faster way to choose a start
-                            player when playing board games with friends. After
-                            teaching myself React, I realized I had fallen in
-                            love with the feeling of solving problems with code
-                            and immediately started planning my next app.
-                            I created my first real app,
-                            [BGQuickstart.com](https://bgquickstart.com),
-                            because I wanted a faster way to choose a start
-                            player when playing board games with friends. After
-                            teaching myself React, I realized I had fallen in
-                            love with the feeling of solving problems with code
-                            and immediately started planning my next app.
-                            I created my first real app,
-                            [BGQuickstart.com](https://bgquickstart.com),
-                            because I wanted a faster way to choose a start
-                            player when playing board games with friends. After
-                            teaching myself React, I realized I had fallen in
-                            love with the feeling of solving problems with code
-                            and immediately started planning my next app.
-                            I created my first real app,
-                            [BGQuickstart.com](https://bgquickstart.com),
-                            because I wanted a faster way to choose a start
-                            player when playing board games with friends. After
-                            teaching myself React, I realized I had fallen in
-                            love with the feeling of solving problems with code
-                            and immediately started planning my next app.
-                            I created my first real app,
-                            [BGQuickstart.com](https://bgquickstart.com),
-                            because I wanted a faster way to choose a start
-                            player when playing board games with friends. After
-                            teaching myself React, I realized I had fallen in
-                            love with the feeling of solving problems with code
-                            and immediately started planning my next app.
-                            v
-                            I created my first real app,
-                            [BGQuickstart.com](https://bgquickstart.com),
-                            because I wanted a faster way to choose a start
-                            player when playing board games with friends. After
-                            teaching myself React, I realized I had fallen in
-                            love with the feeling of solving problems with code
-                            and immediately started planning my next app.  I created my first real app,
-                              [BGQuickstart.com](https://bgquickstart.com),
-                              because I wanted a faster way to choose a start
-                              player when playing board games with friends. After
-                              teaching myself React, I realized I had fallen in
-                              love with the feeling of solving problems with code
-                              and immediately started planning my next app.
-                              I created my first real app,
-                              [BGQuickstart.com](https://bgquickstart.com),
-                              because I wanted a faster way to choose a start
-                              player when playing board games with friends. After
-                              teaching myself React, I realized I had fallen in
-                              love with the feeling of solving problems with code
-                              and immediately started planning my next app.
-                              v
-                              I created my first real app,
-                              [BGQuickstart.com](https://bgquickstart.com),
-                              because I wanted a faster way to choose a start
-                              player when playing board games with friends. After
-                              teaching myself React, I realized I had fallen in
-                              love with the feeling of solving problems with code
-                              and immediately started planning my next app.
-                              vv
-                              I created my first real app,
-                              [BGQuickstart.com](https://bgquickstart.com),
-                              because I wanted a faster way to choose a start
-                              player when playing board games with friends. After
-                              teaching myself React, I realized I had fallen in
-                              love with the feeling of solving problems with code
-                              and immediately started planning my next app.
-                              I created my first real app,
-                              [BGQuickstart.com](https://bgquickstart.com),
-                              because I wanted a faster way to choose a start
-                              player when playing board games with friends. After
-                              teaching myself React, I realized I had fallen in
-                              love with the feeling of solving problems with code
-                              and immediately started planning my next app.v
+  <CardActions style = {{padding:0}}>
+          <AnimatePresence exitBeforeEnter initial={false}>
+                         {readMore ? (
+                           <>
+                             <motion.div
+                               key='show less'
+                               initial={{ height: 0, opacity: 0 }}
+                               animate={{ height: 'auto', opacity: 1 }}
+                               exit={{ height: 0, opacity: 0 }}
+                               transition={{ duration: 0.3 }}
+                               className='grid grid-flow-row gap-4'
+                             >
+                               <Button style = {{color: 'white', padding:0}}
+                                 onClick={() => setReadMore(false)}
+                                 className='flex items-center text-sm text-left transition-colors duration-200 hover:text-white text-gray-40'
+                               >
+                                 <ExpandLessIcon  />
+                                 <span style = {{textTransform: 'lowercase'}}>show less</span>
+                               </Button>
 
-                          </p>
-                          <p>
-                            After some time, I decided to switch to a career in
-                            software engineering and joined Flatiron School's to
-                            accelerate the transition.
-                          </p>
-                          <h3>
-                            <span
-                              role='img'
-                              aria-label='graduation cap emoji'
-                              className='mr-1'
-                            >
-                              🎓️{' '}
-                            </span>
-                            Flatiron School
-                          </h3>
-                          <p>
-                            At Flatiron, I learned Ruby, Ruby on Rails,
-                            JavaScript, and React. It was exciting to learn how
-                            to work with the back end side of things. Databases,
-                            controllers, and routing were always confusing when
-                            I tried to learn it on my own. But after learning
-                            the basics at Flatiron, I've already gone on to
-                            learn my way around Express, GraphQL, and NodeJS to
-                            expand my backend repertoire.
-                          </p>
-                          <p>
-                            I'm thrilled to continue expanding the skill-set I
-                            developed as a student at Flatiron School.
-                          </p>
-                        </motion.div>
-                      </>
-                    ) : (
-                      <motion.div
-                        key='show more'
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: 'auto', opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.1 }}
-                        className='grid grid-flow-row gap-4'
-                      >
-                        <button
-                          onClick={() => setReadMore(true)}
-                          className='flex items-center text-sm text-left transition-colors duration-200 hover:text-white text-gray-40'
-                        >
-                          <span className='ml-1'>show more</span>
-                        </button>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
+
+          <p>
+            Heat 1/2 cup of the broth in a pot until simmering, add saffron and set aside for 10
+            minutes.
+
+            Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over medium-high
+            heat. Add chicken, shrimp and chorizo, and cook, stirring occasionally until lightly
+            browned, 6 to 8 minutes. Transfer shrimp to a large plate and set aside, leaving chicken
+            and chorizo in the pan. Add pimentón, bay leaves, garlic, tomatoes, onion, salt and
+            pepper, and cook, stirring often until thickened and fragrant, about 10 minutes. Add
+            saffron broth and remaining 4 1/2 cups chicken broth; bring to a boil.
+            nd mussels, tucking them down into the rice, and cook
+            again without stirring, uopened and rice is just tender, 5 to 7
+            minutes more. (Discard any mussels that don’t open.)
+          </p>
+
+          </motion.div>
+                    </>
+                  ) : (
+                    <motion.div
+                      key='show more'
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.1 }}
+                    >
+                      <Button style = {{color: 'white', padding:0}}
+                        onClick={() => setReadMore(true)}>
+                        <ExpandMoreIcon  />
+                        <span style = {{textTransform: 'lowercase'}}>show more</span>
+                      </Button>
+                    </motion.div>
+                  )}
+
+              </AnimatePresence>
+</CardActions>
+
+ <typography>
+ <p style={{fontSize: 25}}>
+                   Whether you're looking to hire an eager self-starter or
+                   build your network, I'd love to hear your story.
+                 </p>
+  </typography>
+
+
+
+</div>
+<span style={{padding:'3%', bottom: 0,left: 0}} >  DMs are open on Whether you're looking to hire an eager self-starter  </span>
+
     </Card>
     </ThemeProvider>
   );

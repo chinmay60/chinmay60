@@ -25,7 +25,7 @@ export default function FullWidthGrid(props) {
 const topics = ['Python','C','C++', 'LINUX', 'JavaScript', 'PHP', 'MySQL','PostgreSql', 'MongoDB', 'Redis','Nodejs','React', 'Redux']
 return (
   <ThemeProvider theme={theme}>
-  <Grid container direction="row"  spacing={4} alignItems="center" style={{paddingTop:"1%",paddingBottom:"5%"}}>
+  <Grid container direction="row"  spacing={4} alignItems="center" style={{paddingTop:"1%"}}>
     <Grid item xs={12} sm={12} md={4} lg={4}>
 
       <AboutMe topics={topics} name={props.info.name} company={props.info.company} avatarUrl={props.info.avatarUrl} location = 'Cincinnati, OH (Open to relocation)' profession = 'Software Engineer' school = 'University of Cincinnati'/>

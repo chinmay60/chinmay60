@@ -173,7 +173,7 @@ class PinnedItems extends Component {
       </Query>
 
 
-    <Grid container style={{paddingTop:"0%",paddingBottom:"2%"}}  direction="row" spacing={4}  alignItems="center">
+    <Grid container style={{paddingTop:"0%"}}  direction="row" spacing={4}  alignItems="center">
       <Query query={GET_REPO_INFO}>
         {({ loading, error, data }) => (
           <Aux>
@@ -188,7 +188,7 @@ class PinnedItems extends Component {
 </Grid>
 
 
-<Grid container direction="row" spacing={3}  alignItems="center"  style={{paddingTop:"5%",paddingBottom:"5%", color:'white'}}>
+<Grid container direction="row" spacing={3}  alignItems="center"  style={{paddingBottom:"5%", color:'white'}}>
 
 
 <Query query={GET_RECENT_REPOS}>
