@@ -22,7 +22,4 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-<<<<<<< HEAD
->>>>>>> 7e4e98e7c92b5f8fcbf10d16b2fbacd185f06c23
-=======
->>>>>>> 3adb198671acaa3e5db94449e31d11c570ca42bc
+
