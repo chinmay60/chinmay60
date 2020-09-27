@@ -3,20 +3,13 @@ node_js:
   - 12.18.3
 cache: npm
 
-
-install:
-  - npm install
-
 script:
   - npm test
   - CI=false npm run build
 
+install:
+  - npm install -g firebase-tools
 
-deploy:
-  provider: pages
-  skip-cleanup: true
-  secure:
-    github-token: $REACT_APP_GITHUB_TOKEN
-  local_dir: build
-  on:
-    branch: master
+
+after_success:
+  - firebase deploy --token $FIREBASE_TOKEN
