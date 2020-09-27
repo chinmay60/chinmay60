@@ -12,7 +12,7 @@ const graphQLClient = (props) => {
   const authLink = setContext((_, { headers }) => {
     // get the authentication token from local storage if it exi
 
-    // return the headers to the context so httpLink can read them
+    // return the headers to the context so httpLink can read th
     return {
       headers: {
         ...headers,
