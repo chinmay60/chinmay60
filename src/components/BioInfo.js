@@ -1,9 +1,5 @@
-import moment from 'moment'
 import React  from 'react'
-import Card from './Card'
 import Grid from '@material-ui/core/Grid';
-import { makeStyles } from '@material-ui/core/styles';
-import Aux from './Auxilliary'
 import AboutMe from './Aboutme'
 import Bio from './Bio'
 import { createMuiTheme,ThemeProvider  } from '@material-ui/core/styles';

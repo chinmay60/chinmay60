@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
 import { Query } from 'react-apollo';
-import { gql,useQuery  } from 'apollo-boost';
+import { gql } from 'apollo-boost';
 import UIComponent from './UIComponent'
 import Aux from './Auxilliary'
 import Grid from '@material-ui/core/Grid';
 import Bioinfo from  './BioInfo'
-import { InMemoryCache } from '@apollo/client';
 import Header from './Header';
 
 

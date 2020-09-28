@@ -13,7 +13,6 @@ import { createMuiTheme,ThemeProvider  } from '@material-ui/core/styles';
 import LocationCityTwoToneIcon from '@material-ui/icons/LocationCityTwoTone';
 import WorkTwoToneIcon from '@material-ui/icons/WorkTwoTone';
 import SchoolTwoToneIcon from '@material-ui/icons/SchoolTwoTone';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
 import Avatar from '@material-ui/core/Avatar';
 
 
@@ -104,7 +103,6 @@ const useStyles1 = makeStyles((theme) => ({
 }));
 
 export default function MediaCard(props) {
-  const matches = useMediaQuery('(min-width:600px)');
 
   const classes = useStyles();
   const classes1 = useStyles1();

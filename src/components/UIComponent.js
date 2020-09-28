@@ -2,7 +2,6 @@ import moment from 'moment'
 import React  from 'react'
 import Card from './Card'
 import Grid from '@material-ui/core/Grid';
-import { makeStyles } from '@material-ui/core/styles';
 import Aux from './Auxilliary'
 import Typography from "@material-ui/core/Typography";
 
@@ -20,7 +19,6 @@ repositories
 
 const displayRepositories = Object.keys(repositories)
       .map((igKey) =>{
-        const branchCount = repositories[igKey].node.refs.nodes.length
         const recentRef = repositories[igKey].node.refs.nodes
         .concat()
         .sort((a, b) =>
@@ -38,7 +36,6 @@ const displayRepositories = Object.keys(repositories)
         const lastCommitTime = moment(recentRef.target.pushedDate).fromNow()
         const lastCommitBranch = recentRef.name
         const repoLink = repositories[igKey].url
-        const demoLink = repositories[igKey].homepageUrl
         return (
                   <Grid item xs={12} sm={12} md={4} lg={4} key={repoLink}>
                   <Card
