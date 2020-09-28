@@ -1,5 +1,5 @@
 .App {
-
+font-family: 'Roboto', sans-serif;
   margin-left: auto;
   margin-right: auto;
 }
@@ -26,30 +26,7 @@ max-width: 24rem;
 }
 
 html{
-  background-color: #262828;
-}
+  background-color: #101727;
+  font-family: 'Roboto', sans-serif;
 
-
-.App-header {
-  background-color: #23c455;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

@@ -13,6 +13,7 @@ import { createMuiTheme,ThemeProvider  } from '@material-ui/core/styles';
 import LocationCityTwoToneIcon from '@material-ui/icons/LocationCityTwoTone';
 import WorkTwoToneIcon from '@material-ui/icons/WorkTwoTone';
 import SchoolTwoToneIcon from '@material-ui/icons/SchoolTwoTone';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 import Avatar from '@material-ui/core/Avatar';
 
 
@@ -33,9 +34,9 @@ const theme = createMuiTheme({
 
 const useStyles = makeStyles({
   root: {
+  height: 530,
 
-
-    color:"white",
+    color:"#F5F5F5",
     borderRadius:"10px",
     paddingBottom:"0",
     backgroundColor:"#2b2d2d",
@@ -44,21 +45,22 @@ const useStyles = makeStyles({
   media: {
     height: 140
   },
-  html: {
-    fontSize: 12
-  },
+
   smallIcon: {
     width: 40,
     height: 40,
   },
   header:{
-    height:208,
+    height:170,
 
 
 
   },
   avatar: {
-    top: 18,
+
+    paddingTop: 1,
+
+
     width: 120,
     height: 120,
     margin: 'auto',
@@ -66,7 +68,7 @@ const useStyles = makeStyles({
   },
 
   description:{
-    height:292,
+    height:310,
 
   },
 
@@ -75,7 +77,7 @@ const useStyles = makeStyles({
     paddingTop: 30,
     nowrap : "true",
     paddingLeft: 10,
-    color: 'white',
+    color: '#F5F5F5',
   },
 
   spa:{
@@ -86,7 +88,10 @@ const useStyles = makeStyles({
 
 const useStyles1 = makeStyles((theme) => ({
   root: {
-    paddingTop: 15,
+    marginBottom: 5,
+    paddingTop: 18,
+    paddingBottom:25,
+
     display: "flex",
     justifyContent: "center",
     flexWrap: "wrap",
@@ -111,40 +116,40 @@ export default function MediaCard(props) {
   <ThemeProvider theme={theme}>
     <Card className={classes.root} >
 
-      <CardActionArea className={classes.header} style={{backgroundColor:"#404242"}}>
+      <CardActionArea className={classes.header} style={{backgroundColor:"#404242", fontFamily: 'Hind Madurai'}}>
         <div className={classes1.root}>
           {props.topics.map((index) => {
-            return <Chip color="secondary" key={index} size="medium" style={{ fontSize: 10, color:"white", boxShadow: "1px 1px 1px #2b2d2d "}}  label={index} />
+            return <Chip color="secondary" key={index} size="small" style={{ fontSize: 11, color:"white", boxShadow: "1px 1px 1px #2b2d2d "}}   label={index} />
           })}
         </div>
           <Avatar  className={classes.avatar}  src={props.avatarUrl} />
       </CardActionArea>
 
 
-      <CardActionArea className={classes.description} style={{backgroundColor:"#2b2d2d"}}>
+      <CardActionArea className={classes.description} style={{backgroundColor:"#2b2d2d", fontFamily: 'Hind Madurai'}}>
         <CardContent  align="left">
-          <Typography className = {classes.name} style={{ textAlign: 'center', color: "white", paddingTop: 15}}   variant="h5" component="h2">
+          <Typography className = {classes.name} style={{ textAlign: 'center', color: "#F5F5F5", paddingTop: 15}}   variant="h5" component="h2">
             {props.name}
           </Typography>
 
           <Typography className={classes.typography} variant="body2" color="primary" component="p">
-              <div style={{  display: 'flex',  alignItems: 'center', paddingBottom:8}}>
-              <LocationCityTwoToneIcon fontSize = "small" style={{  color: "white", paddingRight: 8, paddingBottom: 4 }} />
+              <div style={{  display: 'flex',  alignItems: 'center', paddingBottom:8, fontFamily: 'Roboto'}}>
+              <LocationCityTwoToneIcon fontSize = "small" style={{  color: "#F5F5F5", paddingRight: 8, paddingBottom: 4 }} />
               {props.location}
               </div>
               <div style={{  display: 'flex',  alignItems: 'center', paddingBottom:8}}>
-              <WorkTwoToneIcon style={{  color: "white", paddingRight: 8, paddingBottom: 4  }} fontSize = "small" />  {props.profession}
+              <WorkTwoToneIcon style={{  color: "#F5F5F5", paddingRight: 8, paddingBottom: 4  }} fontSize = "small" />  {props.profession}
               </div>
               <div style={{  display: 'flex',  alignItems: 'center'}}>
-              <SchoolTwoToneIcon style={{  color: "white", paddingRight: 8, paddingBottom: 4 }}  fontSize = "small" />  {props.school}
+              <SchoolTwoToneIcon style={{  color: "#F5F5F5", paddingRight: 8, paddingBottom: 4 }}  fontSize = "small" />  {props.school}
               </div>
           </Typography>
         </CardContent>
       </CardActionArea>
 
 
-        <Button style={{width:"50%",backgroundColor:"black",color:"white",textTransform:"none", bottom:0}}><CardActions><GitHubIcon /> {'GitHub'}</CardActions></Button>
-          <Button  style={{width:"50%",backgroundColor:"#2867B2",color:"white", textTransform:"none"}}><CardActions>Linked <LinkedInIcon/></CardActions></Button>
+        <Button component="a" href="https://github.com/chinmay60" style={{width:"50%",fontWeight: '600', backgroundColor:"#1dc690",color:"black",textTransform:"none", fontFamily: 'Hind Madurai'}}><CardActions><GitHubIcon /> {'GitHub'}</CardActions></Button>
+          <Button component="a" href="https://www.linkedin.com/in/chinmay-vinchurkar/"  style={{width:"50%",backgroundColor:"#2867B2",color:"#F5F5F5", textTransform:"none", fontFamily: 'Hind Madurai'}}><CardActions>Linked <LinkedInIcon/></CardActions></Button>
 
 
 

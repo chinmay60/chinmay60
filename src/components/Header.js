@@ -53,7 +53,7 @@ export default function FullWidthGrid() {
         y: isScrollingUp ? 0 : '-50px'
       }}
     >
-    <AppBar position="static" style={{ float: 'left', background:"#262828", color:"white", boxShadow:"None"}}>
+    <AppBar position="static" style={{ float: 'left', background:"#101727", color:"#F5F5F5", boxShadow:"None"}}>
 
       <Toolbar style = {{paddingLeft:0, paddingRight:0}}>
 
@@ -64,7 +64,7 @@ export default function FullWidthGrid() {
             <DocumentText className='w-4 h-4 mr-1' />
             resume
   </button>*/}
-  <Button  variant="contained" color="primary" href = "Chinmay Vinchurkar: vinchucg@mail.uc.edu"><EmailIcon style={{color:"white"}}/>Email Me</Button>
+  <Button  component="a" href="mailto:vinchucg@mail.uc.edu" variant="contained" style={{backgroundColor:"#1dc690", fontWeight:600}} ><EmailIcon style={{color:"black", paddingRight:2}}/>   Email Me</Button>
 
   </Toolbar>
 </AppBar>

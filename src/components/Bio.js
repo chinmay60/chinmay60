@@ -14,13 +14,13 @@ import { createMuiTheme,ThemeProvider  } from '@material-ui/core/styles';
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main:"#4faeae",
+      main:"#379683",
     },
     secondary: {
-      main: '#6a6c6c',
+      main: '#379683',
     },
     ternary:{
-      main: '#37393a',
+      main: '#379683',
     }
   },
 });
@@ -31,13 +31,13 @@ const useStyles = makeStyles((theme) => ({
   root: {
 
 
-  minHeight:515,
+  minHeight:485,
   maxHeight: '100%',
 
-  color:"white",
+  color:"#F5F5F5",
   borderRadius:"10px",
   paddingBottom:"0",
-  backgroundColor:"#2b2d2d",
+  backgroundColor:"#edc7b7",
 
 
 },
@@ -54,9 +54,9 @@ export default function RecipeReviewCard(props) {
 
 
     <ThemeProvider theme={theme}>
-    <div style = {{color: 'white', fontSize:30, textAlign: 'left', paddingBottom: 10}}> Bio
+    <div style = {{color: '#F5F5F5', fontSize:30, textAlign: 'left', paddingBottom: 10, fontFamily: 'Hind Madurai'}}> Bio
     </div>
-    <Card className={classes.root} style={{backgroundColor:"#2b2d2d"}}>
+    <Card className={classes.root} style={{backgroundColor:"#2b2d2d", fontFamily: 'Hind Madurai'}}>
 
 <div style={{padding: '3%'}}>
           <Typography paragraph align="left" >
@@ -76,7 +76,7 @@ export default function RecipeReviewCard(props) {
                                transition={{ duration: 0.3 }}
                                className='grid grid-flow-row gap-4'
                              >
-                               <Button style = {{color: 'white', padding:0}}
+                               <Button style = {{color: 'F5F5F5', padding:0}}
                                  onClick={() => setReadMore(false)}
                                  className='flex items-center text-sm text-left transition-colors duration-200 hover:text-white text-gray-40'
                                >
@@ -110,7 +110,7 @@ export default function RecipeReviewCard(props) {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.1 }}
                     >
-                      <Button style = {{color: 'white', padding:0}}
+                      <Button style = {{color: '#F5F5F5', padding:0}}
                         onClick={() => setReadMore(true)}>
                         <ExpandMoreIcon  />
                         <span style = {{textTransform: 'lowercase'}}>show more</span>

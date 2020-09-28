@@ -28,8 +28,8 @@ const theme = createMuiTheme({
 
 const useStyles = makeStyles({
   root: {
-  
-    color:"white",
+
+    color:"#F5F5F5",
     borderRadius:"10px",
 
     backgroundColor:"#555656",
@@ -81,12 +81,12 @@ export default function MediaCard(props) {
   const classes1 = useStyles1();
 
   return (
-  <ThemeProvider theme={theme}>
-    <Card className={classes.root}>
+  <ThemeProvider theme={theme} >
+    <Card className={classes.root} style={{backgroundColor:"#404242" }}>
       <CardActionArea className = {classes.header} style={{backgroundColor:"#404242" }}>
         <div className={classes1.root}>
           {props.topics.map((index) => {
-            return <Chip color="secondary" key={index} size="small" style={{ fontSize: 10, color:"white"}}  label={index} />
+            return <Chip color="secondary" key={index} size="small" style={{ fontSize: 10, color:"#F5F5F5"}}  label={index} />
           })}
         </div>
       </CardActionArea>
@@ -99,7 +99,7 @@ export default function MediaCard(props) {
             {props.description}
           </Typography>
         </CardContent>
-        <Divider light={true} variant="middle" style={{backgroundColor:"#4faeae"}}/>
+        <Divider light={true} variant="middle" style={{backgroundColor:"#1dc690"}}/>
         <CardContent className={classes.info} align="left" >
           <Typography
             className={classes.html}
@@ -116,7 +116,7 @@ export default function MediaCard(props) {
             display="block"
             gutterBottom
           >
-            <ChatBubbleOutlineIcon color="primary" style={{ fontSize: 12}} fontSize="small" label="" />
+            <ChatBubbleOutlineIcon color="secondary" style={{ fontSize: 12}} fontSize="small" label="" />
             {' '}{props.messageHeadline}
           </Typography>
           <Typography
@@ -130,9 +130,9 @@ export default function MediaCard(props) {
           </Typography>
         </CardContent>
       </CardActionArea>
-    <CardActionArea  style={{backgroundColor:"#4faeae"}}>
-      <CardActions style={{justifyContent:'center', height:'inherit'}}>
-        <GitHubIcon style={{height:'150%'}}/>
+    <CardActionArea  style={{fontSize: 16, fontWeight:'550' , backgroundColor:"#1dc690"}}>
+      <CardActions style={{color: 'black', justifyContent:'center', height:'inherit'}}>
+        <GitHubIcon style={{color: 'black', height:'150%'}}/>
         GitHub
       </CardActions>
     </CardActionArea>
