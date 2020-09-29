@@ -39,7 +39,8 @@ const useStyles = makeStyles({
     height: 140
   },
   html: {
-    fontSize: 12
+    fontSize: 12,
+
   },
   smallIcon: {
     width: 2,
@@ -50,10 +51,6 @@ const useStyles = makeStyles({
 
   },
 
-  info:{
-    height: 60
-
-  },
   footer:{
     height:20
   },

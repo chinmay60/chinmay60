@@ -5,10 +5,6 @@ import PinnedItems from './components/PinnedItems'
 
 function App() {
   return (
-
-
-
-
     <div className={classes.App}>
       <GraphQLClient>
           <PinnedItems />
