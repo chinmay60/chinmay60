@@ -9,7 +9,7 @@ function App() {
 
 
 
-    <div className={classes.App} style={{fontFamily: 'acme'}}>
+    <div className={classes.App}>
       <GraphQLClient>
           <PinnedItems />
       </GraphQLClient>

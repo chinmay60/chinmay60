@@ -18,7 +18,7 @@ const theme = createMuiTheme({
 
 export default function FullWidthGrid(props) {
 
-const topics = ['Python','C','C++', 'LINUX', 'JavaScript', 'MySQL','PostgreSql', 'MongoDB', 'Redis','Nodejs','React']
+const topics = ['Python','C','C++', 'LINUX', 'JavaScript', 'Nodejs','Reactjs', 'GraphQL','PostgreSql', 'Redis','AWS',]
 return (
   <ThemeProvider theme={theme}>
   <Grid container direction="row"  spacing={4} alignItems="center" style={{paddingTop:"1%"}}>

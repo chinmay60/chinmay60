@@ -8,8 +8,8 @@ import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { createMuiTheme,ThemeProvider  } from '@material-ui/core/styles';
-
-
+import Link from '@material-ui/core/Link';
+import MessageIcon from '@material-ui/icons/Message';
 
 const theme = createMuiTheme({
   palette: {
@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
 
 
-  minHeight:485,
+  minHeight:482 ,
   maxHeight: '100%',
 
   color:"#F5F5F5",
@@ -76,7 +76,7 @@ export default function RecipeReviewCard(props) {
                                transition={{ duration: 0.3 }}
                                className='grid grid-flow-row gap-4'
                              >
-                               <Button style = {{color: 'F5F5F5', padding:0}}
+                               <Button style = {{color: '#F5F5F5', padding:0}}
                                  onClick={() => setReadMore(false)}
                                  className='flex items-center text-sm text-left transition-colors duration-200 hover:text-white text-gray-40'
                                >
@@ -121,18 +121,19 @@ export default function RecipeReviewCard(props) {
               </AnimatePresence>
 </CardActions>
 
- <typography>
+
+
  <p style={{fontSize: 25}}>
                    Whether you're looking to hire an eager self-starter or
                    build your network, I'd love to hear your story.
                  </p>
-  </typography>
-
-
 
 </div>
-<span style={{padding:'3%', bottom: 0,left: 0}} >  DMs are open on Whether you're looking to hire an eager self-starter  </span>
 
+
+<Typography>
+<MessageIcon color='primary' style={{paddingLeft:'3%'}} />  DMs are open on  <Link href="https://www.linkedin.com/in/chinmay-vinchurkar/"> link </Link>
+</Typography>
     </Card>
     </ThemeProvider>
   );

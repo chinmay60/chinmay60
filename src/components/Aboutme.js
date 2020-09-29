@@ -20,7 +20,7 @@ import Avatar from '@material-ui/core/Avatar';
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main:"#4faeae",
+      main:"#669999",
     },
     secondary: {
       main: '#6a6c6c',
@@ -90,6 +90,8 @@ const useStyles1 = makeStyles((theme) => ({
     marginBottom: 5,
     paddingTop: 18,
     paddingBottom:25,
+    paddingLeft: '3px',
+    paddingRight: '3px',
 
     display: "flex",
     justifyContent: "center",
@@ -106,11 +108,15 @@ const useStyles1 = makeStyles((theme) => ({
 
 }));
 
+
 export default function MediaCard(props) {
 
   const classes = useStyles();
   const classes1 = useStyles1();
 
+const colors = {'Python': '#306998', 'C': '#0066cc', 'C++':'#00008b', 'LINUX':'#dd4814',
+'JavaScript':'black', 'Nodejs':'#006400', 'Reactjs': 'black', 'GraphQL' : '#d11b95',
+'PostgreSql': ' #336791', 'Redis': '#8B0000', 'AWS':'#FF9900'};
   return (
   <ThemeProvider theme={theme}>
     <Card className={classes.root} >
@@ -118,7 +124,7 @@ export default function MediaCard(props) {
       <CardActionArea className={classes.header} style={{backgroundColor:"#404242", fontFamily: 'Hind Madurai'}}>
         <div className={classes1.root}>
           {props.topics.map((index) => {
-            return <Chip color="secondary" key={index} size="small" style={{ fontSize: 11, color:"white", boxShadow: "1px 1px 1px #2b2d2d "}}   label={index} />
+            return <Chip className = 'Python' color="secondary" key={index} size="small" style={{ fontSize: 11, color: 'whte', fontWeight: 500, backgroundColor:colors[index], boxShadow: "1px 1px 1px #2b2d2d "}}   label={index} />
           })}
         </div>
           <Avatar  className={classes.avatar}  src={props.avatarUrl} />
@@ -127,28 +133,28 @@ export default function MediaCard(props) {
 
       <CardActionArea className={classes.description} style={{backgroundColor:"#2b2d2d", fontFamily: 'Hind Madurai'}}>
         <CardContent  align="left">
-          <Typography className = {classes.name} style={{ textAlign: 'center', color: "#F5F5F5", paddingTop: 15}}   variant="h5" component="h2">
+          <Typography className = {classes.name} style={{ textAlign: 'center', color: "#F5F5F5", paddingBottom: 20}}   variant="h5" component="h2">
             {props.name}
           </Typography>
 
           <Typography className={classes.typography} variant="body2" color="primary" component="p">
-              <div style={{  display: 'flex',  alignItems: 'center', paddingBottom:8, fontFamily: 'Roboto'}}>
-              <LocationCityTwoToneIcon fontSize = "small" style={{  color: "#F5F5F5", paddingRight: 8, paddingBottom: 4 }} />
+              <div style={{  display: 'flex',  alignItems: 'center', fontFamily: 'Roboto'}}>
+              <LocationCityTwoToneIcon color = 'primary' fontSize = "small" style={{   paddingRight: 8, paddingBottom: 4 }} />
               {props.location}
               </div>
-              <div style={{  display: 'flex',  alignItems: 'center', paddingBottom:8}}>
-              <WorkTwoToneIcon style={{  color: "#F5F5F5", paddingRight: 8, paddingBottom: 4  }} fontSize = "small" />  {props.profession}
+              <div style={{  display: 'flex',  alignItems: 'center'}}>
+              <WorkTwoToneIcon color = 'primary' style={{   paddingRight: 8, paddingBottom: 4  }} fontSize = "small" />  {props.profession}
               </div>
               <div style={{  display: 'flex',  alignItems: 'center'}}>
-              <SchoolTwoToneIcon style={{  color: "#F5F5F5", paddingRight: 8, paddingBottom: 4 }}  fontSize = "small" />  {props.school}
+              <SchoolTwoToneIcon color = 'primary' style={{  paddingRight: 8, paddingBottom: 4 }}  fontSize = "small" />  {props.school}
               </div>
           </Typography>
         </CardContent>
       </CardActionArea>
 
 
-        <Button component="a" href="https://github.com/chinmay60" style={{width:"50%",fontWeight: '600', backgroundColor:"#1dc690",color:"black",textTransform:"none", fontFamily: 'Hind Madurai'}}><CardActions><GitHubIcon /> {'GitHub'}</CardActions></Button>
-          <Button component="a" href="https://www.linkedin.com/in/chinmay-vinchurkar/"  style={{width:"50%",backgroundColor:"#2867B2",color:"#F5F5F5", textTransform:"none", fontFamily: 'Hind Madurai'}}><CardActions>Linked <LinkedInIcon/></CardActions></Button>
+        <Button target="_blank" component="a" href="https://github.com/chinmay60" style={{width:"50%",fontWeight: '600', backgroundColor:"#1dc690",color:"black",textTransform:"none", fontFamily: 'Hind Madurai'}}><CardActions><GitHubIcon /> {'GitHub'}</CardActions></Button>
+          <Button target="_blank" component="a" href="https://www.linkedin.com/in/chinmay-vinchurkar/"  style={{width:"50%",backgroundColor:"#2867B2",color:"#F5F5F5", textTransform:"none", fontFamily: 'Hind Madurai'}}><CardActions>Linked <LinkedInIcon/></CardActions></Button>
 
 
 

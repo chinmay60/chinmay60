@@ -60,8 +60,8 @@ return (
         <Grid item style = {{paddingTop: '5%', paddingBottom: 0}} xs={12}>
 
             <Typography   variant="h5" component="h2">
-            <span style = {{color:'white', fontSize:20, paddingRight: 5}} > {props.header} </span>
-              <span style = {{color:'#d3d3d3', fontSize:15}} > (last commit {lastCommit})</span>
+            <span style = {{color:'#F5F5F5', fontSize:20, paddingRight: 5}} > {props.header} </span>
+              <span style = {{color:'#F5F5F5', fontSize:15}} > (last commit {lastCommit})</span>
           </Typography>
 
           </Grid>

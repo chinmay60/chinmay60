@@ -49,9 +49,7 @@ const useStyles = makeStyles({
     height:80,
 
   },
-  description:{
-    height:100
-  },
+
   info:{
     height: 60
 
@@ -76,6 +74,10 @@ const useStyles1 = makeStyles((theme) => ({
 
 }));
 
+const colors = {'python': '#306998', 'C': '#0066cc', 'C++':'#00008b', 'LINUX':'#dd4814',
+'javaScript':'black', 'nodejs':'#006400', 'reactjs': 'black', 'graphql' : '#d11b95',
+'postgresql': ' #336791', 'redis': '#8B0000', 'aws':'#FF9900', 'mysql': '#00758F', 'django':'#092e20'};
+
 export default function MediaCard(props) {
   const classes = useStyles();
   const classes1 = useStyles1();
@@ -86,7 +88,7 @@ export default function MediaCard(props) {
       <CardActionArea className = {classes.header} style={{backgroundColor:"#404242" }}>
         <div className={classes1.root}>
           {props.topics.map((index) => {
-            return <Chip color="secondary" key={index} size="small" style={{ fontSize: 10, color:"#F5F5F5"}}  label={index} />
+            return <Chip color="secondary" key={index} size="small" style={{ backgroundColor:colors[index], fontSize: 10, color:"#F5F5F5"}}  label={index} />
           })}
         </div>
       </CardActionArea>
