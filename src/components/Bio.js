@@ -10,11 +10,14 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { createMuiTheme,ThemeProvider  } from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
 import MessageIcon from '@material-ui/icons/Message';
+import HomeWorkTwoToneIcon from '@material-ui/icons/HomeWorkTwoTone';
+import SchoolIcon from '@material-ui/icons/School';
+
 
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main:"#379683",
+      main:"#007fff ",
     },
     secondary: {
       main: '#379683',
@@ -29,12 +32,10 @@ const theme = createMuiTheme({
 
 const useStyles = makeStyles((theme) => ({
   root: {
-
-
+  fontFamily: 'Hind Madurai',
   minHeight:482 ,
-  maxHeight: '100%',
 
-  color:"#F5F5F5",
+  color:"#ededed ",
   borderRadius:"10px",
   paddingBottom:"0",
   backgroundColor:"#edc7b7",
@@ -54,13 +55,17 @@ export default function RecipeReviewCard(props) {
 
 
     <ThemeProvider theme={theme}>
-    <div style = {{color: '#F5F5F5', fontSize:30, textAlign: 'left', paddingBottom: 10, fontFamily: 'Hind Madurai'}}> Bio
+    <div style = {{color: '#ededed  ', fontSize:30, textAlign: 'left', paddingBottom: 10}}> Bio
     </div>
-    <Card className={classes.root} style={{backgroundColor:"#2b2d2d", fontFamily: 'Hind Madurai'}}>
+    <Card className={classes.root} style={{backgroundColor:"#2b2d2d"}}>
 
 <div style={{padding: '3%'}}>
           <Typography paragraph align="left" >
-            {props.text}
+          I specialize in building Applications, Websites and everything in between.  <br />
+          <br />
+          Using technology to solve problems in the real world is something I'm passionate about.  While I have experience building software in C / C++ and Javascript, Python is my go-to language to solve most of the challenges I face. <br />
+          <br />
+          Developing software for the past six years, Most of my projects are independent and developed as a passion for programming. what drives me is my ability to quickly adapt to innovative tech and apply it to my productivity apps enhancing my day-to-day experience as well as people around me.
 
           </Typography>
 
@@ -69,6 +74,7 @@ export default function RecipeReviewCard(props) {
                          {readMore ? (
                            <>
                              <motion.div
+
                                key='show less'
                                initial={{ height: 0, opacity: 0 }}
                                animate={{ height: 'auto', opacity: 1 }}
@@ -76,29 +82,50 @@ export default function RecipeReviewCard(props) {
                                transition={{ duration: 0.3 }}
                                className='grid grid-flow-row gap-4'
                              >
-                               <Button style = {{color: '#F5F5F5', padding:0}}
+                               <Button style = {{color: '#bababa', padding:0}}
                                  onClick={() => setReadMore(false)}
                                  className='flex items-center text-sm text-left transition-colors duration-200 hover:text-white text-gray-40'
                                >
                                  <ExpandLessIcon  />
-                                 <span style = {{textTransform: 'lowercase'}}>show less</span>
+                                 <span style = {{textTransform: 'lowercase', color:'#bababa'}}>show less</span>
                                </Button>
 
 
-          <p>
-            Heat 1/2 cup of the broth in a pot until simmering, add saffron and set aside for 10
-            minutes.
+          <Typography>
+          <div style={{
+              display: 'flex', paddingTop:10}}>
+          <HomeWorkTwoToneIcon color="secondary" style={{paddingRight:5}} />
+            My journey <br />
+            <br />
+          </div>
 
-            Heat oil in a (14- to 16-inch) paella pan or a large, deep skillet over medium-high
-            heat. Add chicken, shrimp and chorizo, and cook, stirring occasionally until lightly
-            browned, 6 to 8 minutes. Transfer shrimp to a large plate and set aside, leaving chicken
-            and chorizo in the pan. Add pimentón, bay leaves, garlic, tomatoes, onion, salt and
-            pepper, and cook, stirring often until thickened and fragrant, about 10 minutes. Add
-            saffron broth and remaining 4 1/2 cups chicken broth; bring to a boil.
-            nd mussels, tucking them down into the rice, and cook
-            again without stirring, uopened and rice is just tender, 5 to 7
-            minutes more. (Discard any mussels that don’t open.)
-          </p>
+            I designed my first utility app in 7th grade, a basic calculator written in C++.
+            I have always been fascinated by how programming could solve my problems and help others.
+            As I learned more, I taught myself Python and started creating utility applications that can be used by
+            anyone. After falling in love with programming in the school itself,
+            career in software development was a given. I graduated with a Bachelor of Engineering in
+            Information Technology and wanted to learn more.
+
+            <div style={{
+                display: 'flex', paddingTop:30}}>
+            <SchoolIcon color="secondary" style={{paddingRight:5}} />
+              University of Cincinnati <br />
+              <br />
+            </div>
+
+            Pursuing Masters in Computer Science at the University of Cincinnati, I dived deep into Advanced Algorithms and Parallel Computing. Subsequently,
+            I taught myself React and Redux and learned my way around designing APIs and databases for large-scale systems.
+          <br />
+          <br />
+            I am thrilled to continue expanding my skill-set I developed at UC.
+
+
+
+          </Typography>
+
+
+
+
 
           </motion.div>
                     </>
@@ -110,7 +137,7 @@ export default function RecipeReviewCard(props) {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.1 }}
                     >
-                      <Button style = {{color: '#F5F5F5', padding:0}}
+                      <Button style = {{color: '#bababa', padding:0}}
                         onClick={() => setReadMore(true)}>
                         <ExpandMoreIcon  />
                         <span style = {{textTransform: 'lowercase'}}>show more</span>
@@ -121,19 +148,20 @@ export default function RecipeReviewCard(props) {
               </AnimatePresence>
 </CardActions>
 
-
-
- <p style={{fontSize: 25}}>
-                   Whether you're looking to hire an eager self-starter or
-                   build your network, I'd love to hear your story.
-                 </p>
-
 </div>
 
+<div style={{padding:'3%'}}>
+<p style={{fontSize: 22, fontWeight:500}}>
+                  If you're looking to hire a driven Software Engineer or
+                  expand your network, I'd love to hear from you.
+</p>
+<Typography style={{
+    display: 'flex',
+    alignItems: 'center'}}>
 
-<Typography>
-<MessageIcon color='primary' style={{paddingLeft:'3%'}} />  DMs are open on  <Link href="https://www.linkedin.com/in/chinmay-vinchurkar/"> link </Link>
+<MessageIcon color='primary' style={{paddingRight: 5}} />  DMs are open on  <Link style={{paddingLeft: 5}} href="https://www.linkedin.com/in/chinmay-vinchurkar/"> LinkedIn </Link>
 </Typography>
+</div>
     </Card>
     </ThemeProvider>
   );

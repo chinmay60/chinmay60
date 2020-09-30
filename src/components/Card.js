@@ -32,8 +32,9 @@ const theme = createMuiTheme({
 
 const useStyles = makeStyles({
   root: {
+    fontFamily: 'Hind Madurai',
     height: 550,
-    color:"#F5F5F5",
+    color:"#d3d3d3",
     borderRadius:"10px",
 
     backgroundColor:"#555656",
@@ -111,7 +112,7 @@ image={props.repoimage}
 
         <div className={classes1.root}>
           {props.topics.map((index) => {
-            return <Chip color="secondary" key={index} size="small" style={{ backgroundColor:colors[index], fontSize: 12, color:"#F5F5F5", paddingTop:0}}  label={index} />
+            return <Chip color="secondary" key={index} size="small" style={{ backgroundColor:colors[index], fontSize: 12, paddingTop:0}}  label={index} />
 
 
 
@@ -174,7 +175,7 @@ image={props.repoimage}
 
     <CardActionArea target="_blank" component="a" href={props.url} style={{ backgroundColor:"#1dc690"}}>
       <CardActions  style={{color: 'black', justifyContent:'center', height:'inherit'}}>
-      <Button  style={{ fontSize: 15, fontWeight:'600' , padding:0, textTransform:"none", fontFamily: 'Hind Madurai'}} >
+      <Button  style={{ fontSize: 15, fontWeight:'600' , padding:0, textTransform:"none"}} >
         <GitHubIcon style={{color: 'black', height:'150%', padding:0, paddingRight: 2}}/>
         GitHub
         </Button>
