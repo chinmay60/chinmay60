@@ -1,2 +1,2 @@
-I like to build software that solve real-world problems !
+I specialize in designing and building Applications, Websites and everything in between. 
 
