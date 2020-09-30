@@ -153,7 +153,7 @@ const colors = {'Python': '#306998', 'C': '#0066cc', 'C++':'#00008b', 'LINUX':'#
       </CardActionArea>
 
 
-        <Button target="_blank" component="a" href="https://github.com/chinmay60" style={{width:"50%",fontWeight: '600', backgroundColor:"#1dc690",color:"black",textTransform:"none", fontFamily: 'Hind Madurai'}}><CardActions><GitHubIcon /> {'GitHub'}</CardActions></Button>
+        <Button target="_blank" component="a" href="https://github.com/chinmay60" style={{width:"50%",fontWeight: '600', backgroundColor:"#1dc690",color:"black",textTransform:"none", fontFamily: 'Hind Madurai'}}><CardActions><GitHubIcon style={{paddingRight:2}} /> {'GitHub'}</CardActions></Button>
           <Button target="_blank" component="a" href="https://www.linkedin.com/in/chinmay-vinchurkar/"  style={{width:"50%",backgroundColor:"#2867B2",color:"#F5F5F5", textTransform:"none", fontFamily: 'Hind Madurai'}}><CardActions>Linked <LinkedInIcon/></CardActions></Button>
 
 

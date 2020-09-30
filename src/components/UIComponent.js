@@ -35,13 +35,15 @@ const displayRepositories = Object.keys(repositories)
         const lastCommitMsg = recentRef.target.messageHeadline
         const lastCommitTime = moment(recentRef.target.pushedDate).fromNow()
         const lastCommitBranch = recentRef.name
-        const repoLink = repositories[igKey].url
+        const repoLink = repositories[igKey].node.url
         return (
                   <Grid item xs={12} sm={12} md={4} lg={4} key={repoLink}>
                   <Card
                     topics = {topics}
                     name={repositories[igKey].node.name}
                     description={repositories[igKey].node.description}
+                    repoimage = {repositories[igKey].node.openGraphImageUrl}
+                    imagebool = {repositories[igKey].node.usesCustomOpenGraphImage}
                     url={repoLink}
                     messageHeadline={lastCommitMsg}
                     commitMessage={commitCount }
