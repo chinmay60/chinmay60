@@ -1,1 +1,2 @@
-Building Software from Scratch ! since -2012
+I like to build software that solve real-world problems !
+
