@@ -119,13 +119,7 @@ export default function RecipeReviewCard(props) {
           <br />
             I am thrilled to continue expanding my skill-set I developed at UC.
 
-
-
           </Typography>
-
-
-
-
 
           </motion.div>
                     </>
@@ -159,7 +153,7 @@ export default function RecipeReviewCard(props) {
     display: 'flex',
     alignItems: 'center'}}>
 
-<MessageIcon color='primary' style={{paddingRight: 5}} />  DMs are open on  <Link style={{paddingLeft: 5}} href="https://www.linkedin.com/in/chinmay-vinchurkar/"> LinkedIn </Link>
+<MessageIcon color='primary' style={{paddingRight: 5}} />  DMs are open on  <Link target="_blank" component="a" style={{paddingLeft: 5}} href="https://www.linkedin.com/in/chinmay-vinchurkar/"> LinkedIn </Link>
 </Typography>
 </div>
     </Card>
