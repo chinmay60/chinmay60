@@ -1,3 +1,11 @@
+# Hi! I'm Chinmay Vinchurkar
+
+Software Engineer ∙ Python/C/C++/Javascript  ∙ :mortar_board: @UofCincinnati
+
+# :man_technologist: Active Projects
+∙ [Portfolio](https://github.com/chinmay60/chinmay60) (@chinmay60)
+
+# :scroll: Summary
 I specialize in building Applications, Websites and everything in between.  <br />
 
 
