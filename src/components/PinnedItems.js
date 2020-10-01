@@ -6,7 +6,7 @@ import Aux from './Auxilliary'
 import Grid from '@material-ui/core/Grid';
 import Bioinfo from  './BioInfo'
 import Header from './Header';
-
+import Blog from './Blog'
 
 const GET_REPO_INFO = gql`
 query  {
@@ -187,7 +187,7 @@ class PinnedItems extends Component {
 </Grid>
 
 
-<Grid container direction="row" spacing={3}  alignItems="center"  style={{paddingBottom:"5%", color:'white'}}>
+<Grid container direction="row" spacing={3}  alignItems="center"  style={{paddingBottom:"5%"}}>
 
 
 <Query query={GET_RECENT_REPOS}>
@@ -200,12 +200,17 @@ class PinnedItems extends Component {
 {error && <div>Error...</div>}
 {data && (
 
- <UIComponent style = {{display: 'inline', color: 'white'}} pinnedItems = {data.viewer.repositories.edges} header="Recent activity"/>
+ <UIComponent style = {{display: 'inline'}} pinnedItems = {data.viewer.repositories.edges} header="Recent activity"/>
             )}
           </Aux>
         )}
       </Query>
     </Grid>
+
+<Grid container direction="row" spacing={3}  alignItems="center">
+  <Blog />
+  </Grid>
+
   </Grid>
   </Aux>
 

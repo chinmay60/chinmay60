@@ -32,7 +32,7 @@ const theme = createMuiTheme({
 
 const useStyles = makeStyles({
   root: {
-    fontFamily: 'Hind Madurai',
+    fontFamily: 'Roboto',
     height: 550,
     color:"#d3d3d3",
     borderRadius:"10px",
