@@ -133,7 +133,7 @@ image={props.repoimage}
           </Typography>
 
 
-          <Typography className={classes.typography} variant="body2"  component="p">
+          <Typography className={classes.typography} variant="body2" >
             {props.description}
           </Typography>
         </CardContent>

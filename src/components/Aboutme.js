@@ -138,7 +138,7 @@ const colors = {'Python': '#306998', 'C': '#0066cc', 'C++':'#00008b', 'LINUX':'#
             {props.name}
           </Typography>
 
-          <Typography className={classes.typography} variant="body2" color="primary" component="p">
+          <Typography className={classes.typography} variant="body2" color="primary">
               <div style={{  display: 'flex',  alignItems: 'center'}}>
               <LocationCityTwoToneIcon color = 'primary' fontSize = "small" style={{   paddingRight: 8, paddingBottom: 4 }} />
               {props.location}
