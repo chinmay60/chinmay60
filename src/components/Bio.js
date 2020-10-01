@@ -33,7 +33,7 @@ const theme = createMuiTheme({
 const useStyles = makeStyles((theme) => ({
   root: {
   fontFamily: 'Hind Madurai',
-  minHeight:482 ,
+  minHeight:460 ,
 
   color:"#ededed ",
   borderRadius:"10px",
@@ -144,14 +144,14 @@ export default function RecipeReviewCard(props) {
 
 </div>
 
-<div style={{padding:'3%'}}>
-<p style={{fontSize: 22, fontWeight:500}}>
+<div style={{paddingRight:'3%',paddingLeft:'3%', fontSize: 22, fontWeight:500}}>
+
                   If you're looking to hire a driven Software Engineer or
                   expand your network, I'd love to hear from you.
-</p>
+
 <Typography style={{
     display: 'flex',
-    alignItems: 'center'}}>
+    alignItems: 'center', paddingTop:40, paddingBottom:20 }}>
 
 <MessageIcon color='primary' style={{paddingRight: 5}} />  DMs are open on  <Link target="_blank" component="a" style={{paddingLeft: 5}} href="https://www.linkedin.com/in/chinmay-vinchurkar/"> LinkedIn </Link>
 </Typography>

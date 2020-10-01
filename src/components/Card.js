@@ -37,7 +37,7 @@ const useStyles = makeStyles({
     color:"#d3d3d3",
     borderRadius:"10px",
 
-    backgroundColor:"#555656",
+    backgroundColor:"#2b2d2d",
 
   },
   media: {
@@ -53,12 +53,12 @@ html:{
     height: 2,
   },
   header:{
-    minHeight:80,
+
 
   },
 
   typography: {
-    height: 700,
+
     nowrap : "true",
 }
 
@@ -106,7 +106,7 @@ image={props.repoimage}
 
   return (
   <ThemeProvider theme={theme} >
-    <Card className={classes.root} style={{backgroundColor:"#404242", paddingTop:0, position: 'relative' }}>
+    <Card className={classes.root} style={{ paddingTop:0, position: 'relative' }}>
       <CardActionArea className = {classes.header} style={{backgroundColor:"#404242" }}>
 
 
