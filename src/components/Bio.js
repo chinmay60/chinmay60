@@ -61,7 +61,7 @@ export default function RecipeReviewCard(props) {
 
 <div style={{padding: '3%'}}>
           <Typography paragraph align="left" >
-          I specialize in building Applications, Websites and everything in between.  <br />
+          I specialize in building Applications, Websites, and everything in between.  <br />
           <br />
           Using technology to solve problems in the real world is something I'm passionate about.  While I have experience building software in C / C++ and Javascript, Python is my go-to language to solve most of the challenges I face. <br />
           <br />
