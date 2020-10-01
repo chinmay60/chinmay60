@@ -1,3 +1,6 @@
+# Hi! I'm Chinmay Vinchurkar
+
+Software Engineer ∙ Python ∙ 
 I specialize in building Applications, Websites and everything in between.  <br />
 
 
