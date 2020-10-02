@@ -24,7 +24,7 @@ return (
 
       <p>
 
-      As a Software Engineer Intern @CloudChef a food based start-up in Mumbai I got to work with some exiting domains and Tech.
+      As a Software Engineer Intern @CloudChef a food based start-up in Mumbai I got to work with some exiting Tech.
       <br /> My work included:
   </p>
 
