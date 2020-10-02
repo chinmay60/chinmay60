@@ -99,7 +99,7 @@ export default function RecipeReviewCard(props) {
             <br />
           </div>
 
-            I designed my first utility app in 7th grade, a basic calculator written in C++.
+            I designed my first app in 7th grade, a basic calculator written in C++.
             I have always been fascinated by how programming could solve my problems and help others.
             As I learned more, I taught myself Python and started creating utility applications that can be used by
             anyone. After falling in love with programming in the school itself,
@@ -153,7 +153,7 @@ export default function RecipeReviewCard(props) {
     display: 'flex',
     alignItems: 'center', paddingTop:40, paddingBottom:20 }}>
 
-<MessageIcon color='primary' style={{paddingRight: 5}} />  DMs are open on  <Link target="_blank" component="a" style={{paddingLeft: 5}} href="https://www.linkedin.com/in/chinmay-vinchurkar/"> LinkedIn </Link>
+<MessageIcon color='secondary' style={{paddingRight: 5}} />  DMs are open on  <Link target="_blank" component="a" style={{paddingLeft: 5}} href="https://www.linkedin.com/in/chinmay-vinchurkar/"> LinkedIn </Link>
 </Typography>
 </div>
     </Card>

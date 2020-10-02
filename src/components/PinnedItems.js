@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import  React, { Component}  from 'react'
 import { Query } from 'react-apollo';
 import { gql } from 'apollo-boost';
 import UIComponent from './UIComponent'
@@ -6,7 +6,7 @@ import Aux from './Auxilliary'
 import Grid from '@material-ui/core/Grid';
 import Bioinfo from  './BioInfo'
 import Header from './Header';
-import Blog from './Blog'
+import Experience from './Experience'
 
 const GET_REPO_INFO = gql`
 query  {
@@ -149,7 +149,6 @@ const GET_RECENT_REPOS = gql`
 class PinnedItems extends Component {
 
   render(){
-
   return(
 
 
@@ -172,17 +171,20 @@ class PinnedItems extends Component {
       </Query>
 
 
-    <Grid container style={{paddingTop:"0%"}}  direction="row" spacing={4}  alignItems="center">
+    <Grid container  direction="row" spacing={4}  alignItems="center">
       <Query query={GET_REPO_INFO}>
-        {({ loading, error, data }) => (
+        {({ loading, error, data }) => {
+          return(
           <Aux>
             {loading && <div>Loading...</div>}
             {error && <div>Error...</div>}
             {data && (
-
               <UIComponent pinnedItems = {data.viewer.pinnedItems.edges} header="Featured Projects"/>)}
 </Aux>
+
 )}
+}
+
 </Query>
 </Grid>
 
@@ -193,29 +195,39 @@ class PinnedItems extends Component {
 <Query query={GET_RECENT_REPOS}>
 
 
-{({ loading, error, data }) => (
+{({ loading, error, data }) =>
+{
+return(
 
 <Aux>
 {loading && <div>Loading...</div>}
 {error && <div>Error...</div>}
 {data && (
+  <Aux>
+
 
  <UIComponent style = {{display: 'inline'}} pinnedItems = {data.viewer.repositories.edges} header="Recent activity"/>
-            )}
-          </Aux>
-        )}
+
+ <Experience />
+
+ </Aux>
+
+)}
+
+</Aux>
+
+  )}
+}
+
       </Query>
     </Grid>
 
-<Grid container direction="row" spacing={3}  alignItems="center">
-  <Blog />
-  </Grid>
+
 
   </Grid>
   </Aux>
 
+)
 
-  )}
-};
-
+}}
 export default PinnedItems;

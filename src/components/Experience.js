@@ -24,7 +24,7 @@ return (
 
       <p>
 
-      As a Software Engineer Intern @CloudChef which is a food based start-up in Mumbai I got to work with some exiting domains and Tech.
+      As a Software Engineer Intern @CloudChef a food based start-up in Mumbai I got to work with some exiting domains and Tech.
       <br /> My work included:
   </p>
 
@@ -35,7 +35,7 @@ return (
       <CodeIcon />
       </ListItemAvatar>
       <ListItemText
-      primary="Building methods in python to classify various ingredients based on parameters like pH, L-values (HSL color space), density etc. which was used to make programmatic changes in recipes to ensure a standardized final output"
+      primary="Built methods in python to classify various ingredients based on parameters like pH, L-values (HSL color space), density etc. which was used to make programmatic changes in recipes to ensure a standardized final output"
         />
 </ListItem>
 
@@ -46,7 +46,7 @@ return (
 <CodeIcon />
 </ListItemAvatar>
 <ListItemText
-primary="Engineering component APIs for temperature sensing, heat control in python for automation of product-making"
+primary="Engineered component APIs for temperature sensing, heat control in python for automation of product-making"
 />
 </ListItem>
 
@@ -57,7 +57,7 @@ primary="Engineering component APIs for temperature sensing, heat control in pyt
 <CodeIcon />
 </ListItemAvatar>
 <ListItemText
-primary="Creating a python library to establish serial communication between Raspberry pi and Arduino on USB protocol to achieve internal functioning of different Hardware Equipment Models in an automated tea-making product"
+primary="Created a python library to establish serial communication between Raspberry pi and Arduino on USB protocol to achieve internal functioning of different Hardware Equipment Models in an automated tea-making product"
 />
 </ListItem>
 
