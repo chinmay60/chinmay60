@@ -203,7 +203,8 @@ return(
 {loading && <div>Loading...</div>}
 {error && <div>Error...</div>}
 {data && (
-  <Aux>
+
+<Aux>
 
 
  <UIComponent style = {{display: 'inline'}} pinnedItems = {data.viewer.repositories.edges} header="Recent activity"/>
@@ -219,13 +220,13 @@ return(
   )}
 }
 
-      </Query>
-    </Grid>
+</Query>
+</Grid>
 
 
 
-  </Grid>
-  </Aux>
+</Grid>
+</Aux>
 
 )
 
