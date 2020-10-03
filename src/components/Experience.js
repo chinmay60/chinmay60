@@ -15,7 +15,7 @@ export default function FullWidthGrid(props) {
 return (
 
 <Aux>
-        <Grid item xs={12} style = {{color:'#F5F5F5', paddingTop:10}}>
+        <Grid item xs={12} style = {{color:'#F5F5F5', paddingTop:20}}>
 
       <Typography  variant="h5" component="h5" >
         <span > Software Engineer Intern - CloudChef</span>
