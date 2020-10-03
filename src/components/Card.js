@@ -87,7 +87,8 @@ const useStyles1 = makeStyles((theme) => ({
 const colors = {'python': '#306998', 'c': '#0066cc', 'cpp':'#00008b', 'linux':'#dd4814',
 'javaScript':'black', 'nodejs':'#006400', 'reactjs': 'black', 'graphql' : '#d11b95',
 'posgresql': ' #336791', 'redis': '#8B0000', 'aws':'#FF9900', 'mysql': '#00758F', 'django':'#092e20', 'material-ui':'#007acc',
- 'netlify': '#008080', 'restful-api': '#800000', 'keras': '#B53737', 'tensorflow' : '#ff781f', 'redux': '#764abc', 'kibana':'#339999', 'cuda':'#7AB547', 'elasticsearch':'#ff0080' };
+ 'netlify': '#008080', 'restful-api': '#800000', 'keras': '#B53737', 'tensorflow' : '#ff781f', 'redux': '#764abc', 'kibana':'#339999', 'cuda':'#7AB547', 'elasticsearch':'#ff0080',
+'axios': '#dd4814', 'rest-api': '#800000' };
 
 export default function MediaCard(props) {
   const classes = useStyles();
