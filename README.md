@@ -3,7 +3,7 @@
 Software Engineer ∙ Python/C/C++/Javascript  ∙ :mortar_board: @UofCincinnati
 
 # :man_technologist: Active Projects
-∙ [Portfolio](https://imchinmay/netlify.app/) (@chinmay60)
+∙ [Portfolio](https://imchinmay.netlify.app/) (@chinmay60)
 
 # :scroll: Summary
 I specialize in building Applications, Websites and everything in between.  <br />
