@@ -43,7 +43,8 @@ const useStyles = makeStyles({
 
   info: {
     fontFamily: "Roboto",
-    paddingTop: 0,
+    paddingTop:0,
+    paddingBottom:0
   },
 
   description: {
@@ -57,6 +58,7 @@ const useStyles = makeStyles({
 
   html: {
     fontSize: 12,
+    paddingBottom:0,
   },
   content: {
     display: "flex",
@@ -193,7 +195,7 @@ export default function MediaCard(props) {
             <CardContent
               className={classes.info}
               align="left"
-              style={{ fontFamily: "Open Sans" }}
+              style={{ fontFamily: "Open Sans", paddingBottom:10}}
             >
               <Divider
                 light={true}
@@ -246,7 +248,7 @@ export default function MediaCard(props) {
                 textTransform: "none",
               }}
             >
-              <GitHubIcon
+            <GitHubIcon
                 style={{
                   color: "black",
                   height: "150%",
