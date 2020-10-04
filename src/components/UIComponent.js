@@ -10,10 +10,10 @@ export default function FullWidthGrid(props) {
     let lastCommit
 const repositories = props.pinnedItems
 repositories
-      .map((n: any) => n.node)
+      .map((n) => n.node)
       .concat()
-      .sort((a: any, b: any) => (a.pushedAt < b.pushedAt ? 1 : -1))
-      .forEach((r: any) => featuredRepoList.push(r))
+      .sort((a, b) => (a.pushedAt < b.pushedAt ? 1 : -1))
+      .forEach((r) => featuredRepoList.push(r))
   lastCommit =  moment(featuredRepoList[0].pushedAt).fromNow()
 
 
