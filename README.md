@@ -1,6 +1,6 @@
 # Hi! I'm Chinmay Vinchurkar
 
-Software Engineer ∙ Python/C/C++/Javascript  ∙ :mortar_board: @UofCincinnati
+Software Engineer ∙ Python/C/C++/Javascript  ∙ :mortar_board: [@UofCincinnati](https://www.uc.edu/)
 
 # :man_technologist: Active Projects
 ∙ [Portfolio](https://imchinmay.netlify.app/) (@chinmay60)
