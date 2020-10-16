@@ -26,4 +26,4 @@ I am thrilled to continue expanding my skill-set I developed at UC.
 ## 👋🏼️ Let's Connect!
 If you're looking to hire a driven Software Engineer or expand your network, I'd love to hear from you.
 
-Dms are always open on [Linkedin](https://www.linkedin.com/in/chinmay-vinchurkar/)
+Dms are always open on [LinkedIn](https://www.linkedin.com/in/chinmay-vinchurkar/)
