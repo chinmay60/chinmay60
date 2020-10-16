@@ -4,7 +4,7 @@ Software Engineer ∙ Python / C / C++ / Javascript  ∙ :mortar_board: [@UofCin
 [Linkedin](https://www.linkedin.com/in/chinmay-vinchurkar/) ∙ [Portfolio](https://imchinmay.netlify.app/) 
 
 ## :man_technologist: Active Projects
-∙ [Portfolio](https://imchinmay.netlify.app/) (@chinmay60) <br>
+∙ [Portfolio](https://imchinmay.netlify.app/) (@chinmay60) [repo](https://github.com/chinmay60/chinmay60) <br>
 ∙ Activity Tracking ([repo](https://github.com/chinmay60/Activity-Tracking))
 
 ## :scroll: Summary
