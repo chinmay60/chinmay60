@@ -28,5 +28,5 @@ If you're looking to hire a driven Software Engineer or expand your network, I'd
 
 Dms are always open on [LinkedIn](https://www.linkedin.com/in/chinmay-vinchurkar/)
 
-![Chinmay's github stats](https://github-readme-stats.vercel.app/api?username=chinmay60&show_icons=true&theme=calm)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chinmay60&layout=compact&show_icons=true&theme=calm)
+![[Chinmay's github stats](https://github-readme-stats.vercel.app/api?username=chinmay60&show_icons=true&theme=calm)(https://github.com/chinmay60/chinmay60)]
+![[Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=chinmay60&layout=compact&show_icons=true&theme=calm)(https://github.com/chinmay60/chinmay60)]
