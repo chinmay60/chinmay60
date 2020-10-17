@@ -27,3 +27,5 @@ I am thrilled to continue expanding my skill-set I developed at UC.
 If you're looking to hire a driven Software Engineer or expand your network, I'd love to hear from you.
 
 Dms are always open on [LinkedIn](https://www.linkedin.com/in/chinmay-vinchurkar/)
+
+[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=chinmay60)](https://github.com/anuraghazra/github-readme-stats)
