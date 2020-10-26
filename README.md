@@ -23,7 +23,7 @@ Pursuing Masters in Computer Science at the University of Cincinnati, I dived de
 
 I am thrilled to continue expanding my skill-set I developed at UC.
 
-## 👋🏼️ Let's Connect
+## 👋🏼️ Let's Connect!
 If you're looking to hire a driven Software Engineer or expand your network, I'd love to hear from you.
 
 Dms are always open on [LinkedIn](https://www.linkedin.com/in/chinmay-vinchurkar/)
