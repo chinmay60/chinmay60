@@ -4,7 +4,8 @@ Software Engineer ∙ Python / C / C++ / Javascript  ∙ :mortar_board: [@UofCin
 
 ## :man_technologist: Active Projects
 ∙ [Portfolio](https://imchinmay.netlify.app/) (@chinmay60) ([repo](https://github.com/chinmay60/chinmay60)) <br>
-∙ Activity Tracking ([repo](https://github.com/chinmay60/Activity-Tracking))
+∙ Real-time-maps ([repo](https://github.com/chinmay60/Realtime-Maps))
+
 
 ## :scroll: Summary
 I specialize in building Applications, Websites and everything in between.  <br />
