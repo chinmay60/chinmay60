@@ -32,12 +32,15 @@ const theme = createMuiTheme({
 const useStyles = makeStyles({
   root: {
     fontFamily: "Roboto",
-    minHeight: '100%',
-
+    minHeight: "100%",
+    display: "flex",
+    flexDirection: "column",
+    height: "100%",
     color: "#F5F5F5",
     borderRadius: "10px",
     paddingBottom: "0",
     backgroundColor: "#2b2d2d",
+    alignSelf: "flex-start",
   },
   media: {
     height: 140,
@@ -60,7 +63,7 @@ const useStyles = makeStyles({
   },
 
   description: {
-    height:300,
+    height: 300,
   },
 
   typography: {
@@ -205,7 +208,7 @@ export default function MediaCard(props) {
             width: "50%",
             fontWeight: "600",
             backgroundColor: "#1dc690",
-            color: "black"
+            color: "black",
           }}
         >
           <CardActions>
