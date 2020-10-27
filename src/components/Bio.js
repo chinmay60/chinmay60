@@ -30,8 +30,7 @@ const theme = createMuiTheme({
 const useStyles = makeStyles((theme) => ({
   root: {
     fontFamily: "Roboto",
-    minHeight:'100%',
-
+    height:'inherit',
     color: "#ededed ",
     borderRadius: "10px",
     paddingBottom: "0",
@@ -141,7 +140,7 @@ export default function RecipeReviewCard(props) {
                       and Redux and learned my way around designing APIs and
                       databases for large-scale systems.
                       <br />
-                      <br />I am thrilled to continue expanding my skill-set I
+                      <br />I am thrilled to continue expanding the skill-set I
                       developed at UC.
                     </Typography>
                   </motion.div>

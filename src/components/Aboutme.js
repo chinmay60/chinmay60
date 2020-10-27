@@ -201,11 +201,11 @@ export default function MediaCard(props) {
           href="https://github.com/chinmay60"
           style={{
             height: 40,
+            padding: 0,
             width: "50%",
             fontWeight: "600",
             backgroundColor: "#1dc690",
-            color: "black",
-            textTransform: "none",
+            color: "black"
           }}
         >
           <CardActions>
@@ -221,7 +221,7 @@ export default function MediaCard(props) {
             width: "50%",
             backgroundColor: "#2867B2",
             color: "#F5F5F5",
-            textTransform: "none",
+            padding: 0,
           }}
         >
           <CardActions>
