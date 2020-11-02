@@ -19,7 +19,7 @@ const theme = createMuiTheme({
       main: "#007fff ",
     },
     secondary: {
-      main: "#379683",
+      main: "#1dc690",
     },
     ternary: {
       main: "#379683",
@@ -35,7 +35,13 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "10px",
     paddingBottom: "0",
     backgroundColor: "#edc7b7",
+    
   },
+
+  html: {
+    fontSize: 12
+  },
+
 }));
 
 export default function RecipeReviewCard(props) {

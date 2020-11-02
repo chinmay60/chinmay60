@@ -4,7 +4,6 @@ import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
-import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import Chip from "@material-ui/core/Chip";
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -18,7 +17,7 @@ import Avatar from "@material-ui/core/Avatar";
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: "#669999",
+      main: "#1dc690",
     },
     secondary: {
       main: "#6a6c6c",
@@ -32,10 +31,9 @@ const theme = createMuiTheme({
 const useStyles = makeStyles({
   root: {
     fontFamily: "Roboto",
-    minHeight: "100%",
+    height: "100%",
     display: "flex",
     flexDirection: "column",
-    height: "100%",
     color: "#F5F5F5",
     borderRadius: "10px",
     paddingBottom: "0",
@@ -47,8 +45,8 @@ const useStyles = makeStyles({
   },
 
   smallIcon: {
-    width: 40,
-    height: 40,
+    width: 2,
+    height: 2,
   },
   header: {
     height: 170,
@@ -63,14 +61,24 @@ const useStyles = makeStyles({
   },
 
   description: {
-    height: 300,
+    display: "flex",
+    flexDirection: "row",
+    height: "100%",
+
+    alignSelf: "flex-start",
+  },
+
+  footer: {
+    bottom: 0,
+    display: "flex",
   },
 
   typography: {
     textAlign: "left",
-    paddingTop: 30,
+    paddingTop: '10%',
+    paddingBottom: '10%',
     nowrap: "true",
-    paddingLeft: 10,
+   
     color: "#F5F5F5",
   },
 
@@ -96,7 +104,7 @@ const useStyles1 = makeStyles((theme) => ({
   },
   typography: {
     nowrap: "true",
-    paddingTop: 60,
+  
   },
 }));
 
@@ -151,13 +159,12 @@ export default function MediaCard(props) {
           className={classes.description}
           style={{ backgroundColor: "#2b2d2d" }}
         >
-          <CardContent align="left">
+          <CardContent   style={{paddingTop: '25%', alignSelf: "flex-start"}}>
             <Typography
               className={classes.name}
               style={{
                 textAlign: "center",
                 color: "#F5F5F5",
-                paddingBottom: 20,
               }}
               variant="h5"
               component="h2"
@@ -198,39 +205,46 @@ export default function MediaCard(props) {
           </CardContent>
         </CardActionArea>
 
-        <Button
-          target="_blank"
-          component="a"
-          href="https://github.com/chinmay60"
-          style={{
-            height: 40,
-            padding: 0,
-            width: "50%",
-            fontWeight: "600",
-            backgroundColor: "#1dc690",
-            color: "black",
-          }}
-        >
-          <CardActions>
-            <GitHubIcon style={{ paddingRight: 2 }} /> {"GitHub"}
-          </CardActions>
-        </Button>
-        <Button
-          target="_blank"
-          component="a"
-          href="https://www.linkedin.com/in/chinmay-vinchurkar/"
-          style={{
-            height: 40,
-            width: "50%",
-            backgroundColor: "#2867B2",
-            color: "#F5F5F5",
-            padding: 0,
-          }}
-        >
-          <CardActions>
-            Linked <LinkedInIcon />
-          </CardActions>
-        </Button>
+        <CardContent className={classes.footer} style={{ padding: 0 }}>
+          <CardActionArea
+            target="_blank"
+            component="a"
+            href="https://github.com/ashuprabhune"
+            style={{
+              width: "50%",
+              backgroundColor: "#1dc690",
+              color: "black",
+              textTransform: "none",
+              margin: 0,
+              fontWeight:'700'
+            }}
+          >
+            <CardActions
+              style={{ justifyContent: "center", height: "inherit" }}
+            >
+              <GitHubIcon style={{ paddingRight: 5 }} />
+              {"GitHub"}
+            </CardActions>
+          </CardActionArea>
+          <CardActionArea
+            target="_blank"
+            component="a"
+            href="https://www.linkedin.com/in/ashish-prabhune/"
+            style={{
+              width: "50%",
+              backgroundColor: "#2867B2",
+              color: "white",
+              textTransform: "none",
+            }}
+          >
+            <CardActions
+              style={{ justifyContent: "center", height: "inherit" }}
+            >
+              Linked
+              <LinkedInIcon />
+            </CardActions>
+          </CardActionArea>
+        </CardContent>
       </Card>
     </ThemeProvider>
   );

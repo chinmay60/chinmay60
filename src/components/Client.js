@@ -4,13 +4,11 @@ import { ApolloProvider } from "react-apollo";
 import { setContext } from "@apollo/client/link/context";
 
 const httpLink = new createHttpLink({ uri: "https://api.github.com/graphql" });
-const token = process.env.REACT_APP_GITHUB_TOKEN;
+const token = "656ec9af616d919078fa266222f983b8367f606e";
 
 const graphQLClient = (props) => {
   const authLink = setContext((_, { headers }) => {
-    // get the authentication token from local storage if it exi
-
-    // return the headers to the context so httpLink can read th
+    
     return {
       headers: {
         ...headers,
