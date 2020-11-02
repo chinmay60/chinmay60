@@ -209,7 +209,7 @@ export default function MediaCard(props) {
           <CardActionArea
             target="_blank"
             component="a"
-            href="https://github.com/ashuprabhune"
+            href="https://github.com/chinmay60/"
             style={{
               width: "50%",
               backgroundColor: "#1dc690",
@@ -229,7 +229,7 @@ export default function MediaCard(props) {
           <CardActionArea
             target="_blank"
             component="a"
-            href="https://www.linkedin.com/in/ashish-prabhune/"
+            href="https://www.linkedin.com/in/chinmay-vinchurkar/"
             style={{
               width: "50%",
               backgroundColor: "#2867B2",
