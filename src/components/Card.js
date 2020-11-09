@@ -60,7 +60,8 @@ const useStyles = makeStyles({
     fontSize: 12,
     display: "flex", 
     alignItems: "center",
-    paddingBottom: 2
+    paddingBottom: 2,
+    paddingTop:0
   },
   content: {
     display: "flex",
@@ -197,11 +198,11 @@ export default function MediaCard(props) {
             <CardContent
               className={classes.info}
               align="left"
-              style={{ fontFamily: "Open Sans", paddingBottom:10}}
+              style={{ fontFamily: "Roboto", paddingBottom:10}}
             >
               <Divider
                 light={true}
-                style={{ backgroundColor: "#1dc690", marginBottom: '15px' }}
+                style={{ backgroundColor: "#1dc690", marginBottom: '10px' }}
               />
               <Typography className={classes.html} >
                 <UpdateIcon color="primary" style={{ fontSize: 12, paddingRight: 5 }} label="" />{" "}
