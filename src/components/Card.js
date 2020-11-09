@@ -58,7 +58,9 @@ const useStyles = makeStyles({
 
   html: {
     fontSize: 12,
-    paddingBottom:0,
+    display: "flex", 
+    alignItems: "center",
+    paddingBottom: 2
   },
   content: {
     display: "flex",
@@ -201,23 +203,23 @@ export default function MediaCard(props) {
                 light={true}
                 style={{ backgroundColor: "#1dc690", marginBottom: '15px' }}
               />
-              <Typography className={classes.html} display="block" gutterBottom>
-                <UpdateIcon color="primary" style={{ fontSize: 12 }} label="" />{" "}
+              <Typography className={classes.html} >
+                <UpdateIcon color="primary" style={{ fontSize: 12, paddingRight: 5 }} label="" />{" "}
                 {props.date} {"on"} {props.commitBranch}
               </Typography>
-              <Typography variant="caption" display="block" gutterBottom>
+              <Typography className={classes.html} >
                 <ChatBubbleOutlineIcon
                   color="primary"
-                  style={{ fontSize: 12 }}
+                  style={{ fontSize: 12, paddingRight: 5 }}
                   fontSize="small"
                   label=""
                 />{" "}
                 {props.messageHeadline}
               </Typography>
-              <Typography variant="caption" display="block" gutterBottom>
+              <Typography className={classes.html} >
                 <FlareIcon
                   color="primary"
-                  style={{ fontSize: 12 }}
+                  style={{ fontSize: 12, paddingRight: 5 }}
                   fontSize="small"
                   label=""
                 />{" "}
