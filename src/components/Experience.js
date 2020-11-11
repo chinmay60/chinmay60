@@ -16,14 +16,14 @@ export default function FullWidthGrid(props) {
         <Typography variant="h5" component="h5">
           <span> Software Engineer Intern - CloudChef</span>
           <span style={{ color: "#F5F5F5", fontSize: 15, paddingLeft: 5 }}>
-            (2018-2019)
+            (Dec 2018 – Feb 2019)
           </span>
         </Typography>
 
         <p>
           Software Engineer Intern @CloudChef a food based start-up in Mumbai
           where I got to work with some exciting Tech.
-          <br /> My work included:
+          <br /> <br />My work included:
         </p>
 
         <List>
@@ -61,6 +61,55 @@ export default function FullWidthGrid(props) {
           </ListItem>
         </List>
       </Grid>
+      <Grid  item xs={12} style={{ color: "#F5F5F5", paddingTop:'3%' }} >
+      <Typography variant="h5" component="h5">
+          <span> Full Stack Developer Intern - DY Patil University, Navi Mumbai, India </span>
+          <span style={{ color: "#F5F5F5", fontSize: 15, paddingLeft: 5 }}>
+            (June 2017 – May 2019)
+          </span>
+        </Typography>
+
+        <p>
+        Full Stack Developer Intern @DY Patil University, Navi Mumbai where I got to work with a range of web technology stack and databases. I was involved in Designing and building the main college website using PHP, React, bootstrap v4, and MySQL.
+          <br /> <br /> My work included:
+        </p>
+
+        <List>
+          <ListItem alignItems="flex-start">
+            <ListItemAvatar>
+              <CodeIcon />
+            </ListItemAvatar>
+            <ListItemText primary="Worked with a team of 8 to develop and maintain Content Management System allowing faculty and staff to manage different modules of the website" />
+          </ListItem>
+
+          <Divider
+            variant="inset"
+            style={{ backgroundColor: "#1dc690" }}
+            component="li"
+          />
+
+          <ListItem alignItems="flex-start">
+            <ListItemAvatar>
+              <CodeIcon />
+            </ListItemAvatar>
+            <ListItemText primary="Improved legacy front end by replacing it with ReactJs, Bootstrap, and custom stylesheets which resulted in 50% faster loading times" />
+          </ListItem>
+
+          <Divider
+            variant="inset"
+            style={{ backgroundColor: "#1dc690" }}
+            component="li"
+          />
+
+          <ListItem alignItems="flex-start">
+            <ListItemAvatar>
+              <CodeIcon />
+            </ListItemAvatar>
+            <ListItemText primary="Remodeled and migrated college database through MySQL and optimized the database by removing redundancy to save storage space by 20% " />
+          </ListItem>
+        </List>
+      </Grid>
     </Aux>
+  
   );
 }
