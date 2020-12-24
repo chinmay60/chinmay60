@@ -1,6 +1,5 @@
 import React from "react";
-import { ApolloClient, createHttpLink, InMemoryCache } from "@apollo/client";
-import { ApolloProvider } from "react-apollo";
+import { ApolloClient, createHttpLink, InMemoryCache, ApolloProvider } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
 
 const httpLink = new createHttpLink({ uri: "https://api.github.com/graphql" });

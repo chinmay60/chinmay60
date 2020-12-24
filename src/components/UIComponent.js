@@ -38,7 +38,8 @@ const displayRepositories = Object.keys(repositories)
         const repoLink = repositories[igKey].node.url
         return (
                   <Grid item xs={12} sm={12} md={4} lg={4} key={repoLink}>
-                  <Card
+                    
+                    <Card
                     topics = {topics}
                     name={repositories[igKey].node.name}
                     description={repositories[igKey].node.description}
@@ -51,6 +52,8 @@ const displayRepositories = Object.keys(repositories)
                     date={lastCommitTime}
                     key={repoLink}
                     />
+               
+                  
                   </Grid>
 
               )

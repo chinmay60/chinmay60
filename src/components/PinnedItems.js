@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import { Query } from "react-apollo";
-import { gql } from "apollo-boost";
+import React from "react";
+import { gql, useQuery } from "@apollo/client";
 import UIComponent from "./UIComponent";
 import Aux from "./Auxilliary";
 import Grid from "@material-ui/core/Grid";
 import Bioinfo from "./BioInfo";
 import Header from "./Header";
 import Experience from "./Experience";
+import LinearProgress from "@material-ui/core/LinearProgress";
 
 const GET_REPO_INFO = gql`
   query {
@@ -138,73 +138,80 @@ const GET_RECENT_REPOS = gql`
   }
 `;
 
-class PinnedItems extends Component {
-  render() {
-    return (
-      <Aux>
-        <Header />
-        <Grid container alignItems="center">
-          <Query query={GET_BIO_INFO} key={"1"}>
-            {({ loading, error, data }) => (
+const PinnedItems = () => {
+  const {
+    loading: loading_repoinfo,
+    error: error_repoinfo,
+    data: data_repoinfo,
+  } = useQuery(GET_REPO_INFO);
+  const {
+    loading: loading_bioinfo,
+    error: error_bioinfo,
+    data: data_bioinfo,
+  } = useQuery(GET_BIO_INFO);
+  const {
+    loading: loading_recentreops,
+    error: error_recentreops,
+    data: data_recentreops,
+  } = useQuery(GET_RECENT_REPOS);
+
+  return (
+    <Aux>
+      <Header />
+      <Grid container alignItems="center">
+        <Aux>
+          {loading_bioinfo && (
+            <div style={{ width: "100%" }}>
+              {" "}
+              <LinearProgress /> Loading...
+            </div>
+          )}
+          {error_bioinfo && <div>Error...</div>}
+          {data_bioinfo && <Bioinfo info={data_bioinfo.viewer} />}
+        </Aux>
+
+        <Grid container direction="row" spacing={4} alignItems="stretch">
+       
+          <Aux>
+            {loading_repoinfo && <div></div>}
+            {error_repoinfo && <div>Error...</div>}
+            {data_repoinfo && (
+              <UIComponent
+                pinnedItems={data_repoinfo.viewer.pinnedItems.edges}
+                header="Featured Projects"
+              />
+            )}
+          </Aux>
+     
+        </Grid>
+
+        <Grid
+          container
+          direction="row"
+          spacing={3}
+          alignItems="stretch"
+          style={{ paddingBottom: "5%" }}
+        >
+          <Aux>
+            {loading_recentreops && <div> </div>}
+            {error_recentreops && <div>Error...</div>}
+            {data_recentreops && (
               <Aux>
-                {loading && <div>Loading...</div>}
-                {error && <div>Error...</div>}
-                {data && <Bioinfo info={data.viewer} />}
+                <UIComponent
+                  style={{ display: "inline" }}
+                  pinnedItems={data_recentreops.viewer.repositories.edges}
+                  header="Recent activity"
+                />
+
+                <Experience />
               </Aux>
             )}
-          </Query>
-
-          <Grid container direction="row" spacing={4} alignItems="stretch">
-            <Query query={GET_REPO_INFO}>
-              {({ loading, error, data }) => {
-                return (
-                  <Aux>
-                    {loading && <div>Loading...</div>}
-                    {error && <div>Error...</div>}
-                    {data && (
-                      <UIComponent
-                        pinnedItems={data.viewer.pinnedItems.edges}
-                        header="Featured Projects"
-                      />
-                    )}
-                  </Aux>
-                );
-              }}
-            </Query>
-          </Grid>
-
-          <Grid
-            container
-            direction="row"
-            spacing={3}
-            alignItems="stretch"
-            style={{ paddingBottom: "5%" }}
-          >
-            <Query query={GET_RECENT_REPOS}>
-              {({ loading, error, data }) => {
-                return (
-                  <Aux>
-                    {loading && <div>Loading...</div>}
-                    {error && <div>Error...</div>}
-                    {data && (
-                      <Aux>
-                        <UIComponent
-                          style={{ display: "inline" }}
-                          pinnedItems={data.viewer.repositories.edges}
-                          header="Recent activity"
-                        />
-
-                        <Experience />
-                      </Aux>
-                    )}
-                  </Aux>
-                );
-              }}
-            </Query>
-          </Grid>
+          </Aux>
+          );
         </Grid>
-      </Aux>
-    );
-  }
-}
+      </Grid>
+    </Aux>
+  );
+};
+
 export default PinnedItems;
