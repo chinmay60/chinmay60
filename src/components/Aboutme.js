@@ -13,6 +13,9 @@ import LocationCityTwoToneIcon from "@material-ui/icons/LocationCityTwoTone";
 import WorkTwoToneIcon from "@material-ui/icons/WorkTwoTone";
 import SchoolTwoToneIcon from "@material-ui/icons/SchoolTwoTone";
 import Avatar from "@material-ui/core/Avatar";
+import { LinearProgress } from "@material-ui/core";
+import LazyLoad from "react-lazyload";
+
 
 const theme = createMuiTheme({
   palette: {
@@ -153,7 +156,10 @@ export default function MediaCard(props) {
               );
             })}
           </div>
+          <LazyLoad height={120} once={true} placeholder={<LinearProgress />}>
           <Avatar className={classes.avatar} src={props.avatarUrl} />
+          </LazyLoad>
+          
         </CardActionArea>
 
         <CardActionArea
