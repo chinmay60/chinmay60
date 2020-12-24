@@ -1,11 +1,14 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { gql, useQuery } from "@apollo/client";
-import UIComponent from "./UIComponent";
+
 import Aux from "./Auxilliary";
 import Grid from "@material-ui/core/Grid";
-import Bioinfo from "./BioInfo";
+
 import Header from "./Header";
 import Experience from "./Experience";
+
+const Bioinfo = React.lazy(() => import("./BioInfo"));
+const UIComponent = React.lazy(() => import("./UIComponent"));
 
 const GET_REPO_INFO = gql`
   query {
@@ -161,7 +164,12 @@ const PinnedItems = () => {
         <Aux>
           {loading_bioinfo && <div>Loading...</div>}
           {error_bioinfo && <div>Error...</div>}
-          {data_bioinfo && <Bioinfo info={data_bioinfo.viewer} />}
+          {data_bioinfo && (
+            <Suspense fallback={<div>Loading...</div>}>
+              {" "}
+              <Bioinfo info={data_bioinfo.viewer} />
+            </Suspense>
+          )}
         </Aux>
 
         <Grid container direction="row" spacing={4} alignItems="stretch">
@@ -169,10 +177,12 @@ const PinnedItems = () => {
             {loading_repoinfo && <div></div>}
             {error_repoinfo && <div>Error...</div>}
             {data_repoinfo && (
-              <UIComponent
-                pinnedItems={data_repoinfo.viewer.pinnedItems.edges}
-                header="Featured Projects"
-              />
+              <Suspense fallback={<div>Loading...</div>}>
+                <UIComponent
+                  pinnedItems={data_repoinfo.viewer.pinnedItems.edges}
+                  header="Featured Projects"
+                />
+              </Suspense>
             )}
           </Aux>
         </Grid>
@@ -189,11 +199,13 @@ const PinnedItems = () => {
             {error_recentreops && <div>Error...</div>}
             {data_recentreops && (
               <Aux>
-                <UIComponent
-                  style={{ display: "inline" }}
-                  pinnedItems={data_recentreops.viewer.repositories.edges}
-                  header="Recent activity"
-                />
+                <Suspense fallback={<div>Loading...</div>}>
+                  <UIComponent
+                    style={{ display: "inline" }}
+                    pinnedItems={data_recentreops.viewer.repositories.edges}
+                    header="Recent activity"
+                  />
+                </Suspense>
 
                 <Experience />
               </Aux>
