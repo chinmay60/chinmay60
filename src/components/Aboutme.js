@@ -75,10 +75,12 @@ const useStyles = makeStyles({
 
   typography: {
     textAlign: "left",
-    paddingTop: '10%',
-    paddingBottom: '10%',
+    paddingTop: "10%",
+    paddingBottom: "10%",
     nowrap: "true",
-   
+    fontFamily: "Roboto",
+    fontSize: 14,
+
     color: "#F5F5F5",
   },
 
@@ -104,7 +106,6 @@ const useStyles1 = makeStyles((theme) => ({
   },
   typography: {
     nowrap: "true",
-  
   },
 }));
 
@@ -159,7 +160,7 @@ export default function MediaCard(props) {
           className={classes.description}
           style={{ backgroundColor: "#2b2d2d" }}
         >
-          <CardContent   style={{paddingTop: '25%', alignSelf: "flex-start"}}>
+          <CardContent style={{ paddingTop: "25%", alignSelf: "flex-start" }}>
             <Typography
               className={classes.name}
               style={{
@@ -172,11 +173,7 @@ export default function MediaCard(props) {
               {props.name}
             </Typography>
 
-            <Typography
-              className={classes.typography}
-              variant="body2"
-              color="primary"
-            >
+            <div className={classes.typography}>
               <div style={{ display: "flex", alignItems: "center" }}>
                 <LocationCityTwoToneIcon
                   color="primary"
@@ -201,7 +198,7 @@ export default function MediaCard(props) {
                 />{" "}
                 {props.school}
               </div>
-            </Typography>
+            </div>
           </CardContent>
         </CardActionArea>
 
@@ -216,7 +213,7 @@ export default function MediaCard(props) {
               color: "black",
               textTransform: "none",
               margin: 0,
-              fontWeight:'700'
+              fontWeight: "700",
             }}
           >
             <CardActions
