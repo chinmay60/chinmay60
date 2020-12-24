@@ -6,7 +6,6 @@ import Grid from "@material-ui/core/Grid";
 import Bioinfo from "./BioInfo";
 import Header from "./Header";
 import Experience from "./Experience";
-import LinearProgress from "@material-ui/core/LinearProgress";
 
 const GET_REPO_INFO = gql`
   query {
@@ -160,18 +159,12 @@ const PinnedItems = () => {
       <Header />
       <Grid container alignItems="center">
         <Aux>
-          {loading_bioinfo && (
-            <div style={{ width: "100%" }}>
-              {" "}
-              <LinearProgress /> Loading...
-            </div>
-          )}
+          {loading_bioinfo && <div>Loading...</div>}
           {error_bioinfo && <div>Error...</div>}
           {data_bioinfo && <Bioinfo info={data_bioinfo.viewer} />}
         </Aux>
 
         <Grid container direction="row" spacing={4} alignItems="stretch">
-       
           <Aux>
             {loading_repoinfo && <div></div>}
             {error_repoinfo && <div>Error...</div>}
@@ -182,7 +175,6 @@ const PinnedItems = () => {
               />
             )}
           </Aux>
-     
         </Grid>
 
         <Grid
