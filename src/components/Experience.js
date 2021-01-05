@@ -12,7 +12,11 @@ import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 export default function FullWidthGrid(props) {
   return (
     <Aux>
-      <Grid item xs={12} style={{ color: "#F5F5F5", paddingTop:'3%' }}>
+      <Grid
+        item
+        xs={12}
+        style={{ color: "#F5F5F5", paddingTop: "3%", fontFamily: "Roboto" }}
+      >
         <Typography variant="h5" component="h5">
           <span> Software Engineer Intern - CloudChef</span>
           <span style={{ color: "#F5F5F5", fontSize: 15, paddingLeft: 5 }}>
@@ -23,7 +27,8 @@ export default function FullWidthGrid(props) {
         <p>
           Software Engineer Intern @CloudChef a food based start-up in Mumbai
           where I got to work with some exciting Tech.
-          <br /> <br />My work included:
+          <br /> <br />
+          My work included:
         </p>
 
         <List>
@@ -31,7 +36,7 @@ export default function FullWidthGrid(props) {
             <ListItemAvatar>
               <CodeIcon />
             </ListItemAvatar>
-            <ListItemText primary="Built methods in python to classify various ingredients based on parameters like pH, L-values (HSL color space), density etc. which was used to make programmatic changes in recipes to ensure a standardized final output" />
+            <ListItemText primary="Collaborated in a cross-functional team to engineer component APIs for temperature sensing, heat control to achieve automation in product-making" />
           </ListItem>
 
           <Divider
@@ -44,7 +49,7 @@ export default function FullWidthGrid(props) {
             <ListItemAvatar>
               <CodeIcon />
             </ListItemAvatar>
-            <ListItemText primary="Engineered component APIs for temperature sensing, heat control in python for automation of product-making" />
+            <ListItemText primary="Built and tested classification models like Kernel SVMs and Random Forest to classify ingredients based on parameters like pH, L-values (HSL color space), density, etc. accomplishing an accuracy of 95%" />
           </ListItem>
 
           <Divider
@@ -57,24 +62,48 @@ export default function FullWidthGrid(props) {
             <ListItemAvatar>
               <CodeIcon />
             </ListItemAvatar>
-            <ListItemText primary="Created a python library to establish serial communication between Raspberry pi and Arduino on USB protocol to achieve internal functioning of different Hardware Equipment Models in an automated tea-making product" />
+            <ListItemText primary="Established serial communication between Raspberry pi and Arduino on USB protocol for internal functioning of different Hardware Equipment Models in automated tea-making product
+" />
           </ListItem>
         </List>
       </Grid>
-      <Grid  item xs={12} style={{ color: "#F5F5F5", paddingTop:'3%' }} >
-      <Typography variant="h5" component="h5">
-          <span> Full Stack Developer Intern - DY Patil University, Navi Mumbai, India </span>
+      <Grid
+        item
+        xs={12}
+        style={{ color: "#F5F5F5", paddingTop: "3%", fontFamily: "Roboto" }}
+      >
+        <Typography variant="h5" component="h5">
+          <span>
+            {" "}
+            Full Stack Developer Intern - DY Patil University{" "}
+          </span>
           <span style={{ color: "#F5F5F5", fontSize: 15, paddingLeft: 5 }}>
             (June 2017 – May 2019)
           </span>
         </Typography>
 
         <p>
-        Full Stack Developer Intern @DY Patil University, Navi Mumbai where I got to work with a range of web technology stack and databases. I was involved in Designing and building the main college website using PHP, React, bootstrap v4, and MySQL.
+          Full Stack Developer Intern @DY Patil University, Navi Mumbai where I
+          got to work with a range of web technology stack and databases. I was
+          involved in Designing and building the main college website using PHP,
+          React, bootstrap v4, and MySQL.
           <br /> <br /> My work included:
         </p>
 
         <List>
+          <ListItem alignItems="flex-start">
+            <ListItemAvatar>
+              <CodeIcon />
+            </ListItemAvatar>
+            <ListItemText  primary="Designed and built the main college website using PHP, React, bootstrap v4, and MySQL" />
+          </ListItem>
+
+          <Divider
+            variant="inset"
+            style={{ backgroundColor: "#1dc690" }}
+            component="li"
+          />
+
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
               <CodeIcon />
@@ -110,6 +139,5 @@ export default function FullWidthGrid(props) {
         </List>
       </Grid>
     </Aux>
-  
   );
 }
