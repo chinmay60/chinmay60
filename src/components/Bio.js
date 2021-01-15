@@ -66,16 +66,13 @@ export default function RecipeReviewCard(props) {
             between. <br />
             <br />
             Using technology to solve problems in the real world is something
-            I'm passionate about. Though I have experience working as a
-            full-stack developer using languages like TypeScript/Javascript,
-            frameworks like React/Redux on the frontend, and Python,
-            ExpressJs/NodeJS at the backend, I have also built desktop and
-            productivity applications working with C++ and python. <br />
+            I'm passionate about. I have experience working as a full-stack
+            developer using languages like TypeScript/Javascript with
+            React/Redux on the front end and Python, ExpressJs/NodeJS at the
+            back end. I have also built desktop and productivity applications
+            working with C++. <br />
             <br />
-            My six-year Background in Software Development with a Master's
-            degree in Computer Science allows me to have a fundamental
-            understanding of how a system is designed and quickly grasp and
-            adapt to new technologies.
+            My six-year background in Software Development with a Master's degree in Computer Science gave me a fundamental understanding of System Design and allows me to quickly grasp and adapt to new technology. 
           </Typography>
 
           <CardActions style={{ padding: 0 }}>
@@ -119,10 +116,9 @@ export default function RecipeReviewCard(props) {
                       </div>
                       I designed my first app in 7th grade, a basic calculator
                       written in C++. I taught myself Python and started
-                      creating utility/productivity applications for general
+                      building utility/productivity applications for general
                       use. I graduated with a Bachelor of Engineering in
-                      Information Technology and went on to pursue a master's
-                      degree in Computer Science at the University of
+                      Information Technology and went on to pursue my master's at the University of
                       Cincinnati.
                       <div
                         style={{
