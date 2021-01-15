@@ -30,18 +30,16 @@ const theme = createMuiTheme({
 const useStyles = makeStyles((theme) => ({
   root: {
     fontFamily: "Roboto",
-    height:'inherit',
+    height: "inherit",
     color: "#ededed ",
     borderRadius: "10px",
     paddingBottom: "0",
     backgroundColor: "#edc7b7",
-    
   },
 
   html: {
-    fontSize: 12
+    fontSize: 12,
   },
-
 }));
 
 export default function RecipeReviewCard(props) {
@@ -68,15 +66,16 @@ export default function RecipeReviewCard(props) {
             between. <br />
             <br />
             Using technology to solve problems in the real world is something
-            I'm passionate about. While I have experience building software in C
-            / C++ and Javascript, Python is my go-to language to solve most of
-            the challenges I face. <br />
+            I'm passionate about. Though I have experience working as a
+            full-stack developer using languages like TypeScript/Javascript,
+            frameworks like React/Redux on the frontend, and Python,
+            ExpressJs/NodeJS at the backend, I have also built desktop and
+            productivity applications working with C++ and python. <br />
             <br />
-            Developing software for the past six years, Most of my projects are
-            independent and developed as a passion for programming. what drives
-            me is my ability to quickly adapt to innovative tech and apply it to
-            my productivity apps enhancing my day-to-day experience as well as
-            people around me.
+            My six-year Background in Software Development with a Master's
+            degree in Computer Science allows me to have a fundamental
+            understanding of how a system is designed and quickly grasp and
+            adapt to new technologies.
           </Typography>
 
           <CardActions style={{ padding: 0 }}>
@@ -119,14 +118,12 @@ export default function RecipeReviewCard(props) {
                         <br />
                       </div>
                       I designed my first app in 7th grade, a basic calculator
-                      written in C++. I have always been fascinated by how
-                      programming could solve my problems and help others. As I
-                      learned more, I taught myself Python and started creating
-                      utility applications that can be used by anyone. After
-                      falling in love with programming in the school itself,
-                      career in software development was a given. I graduated
-                      with a Bachelor of Engineering in Information Technology
-                      and wanted to learn more.
+                      written in C++. I taught myself Python and started
+                      creating utility/productivity applications for general
+                      use. I graduated with a Bachelor of Engineering in
+                      Information Technology and went on to pursue a master's
+                      degree in Computer Science at the University of
+                      Cincinnati.
                       <div
                         style={{
                           display: "flex",
