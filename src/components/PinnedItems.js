@@ -1,6 +1,5 @@
 import React, { Suspense } from "react";
 import { gql, useQuery } from "@apollo/client";
-
 import Aux from "./Auxilliary";
 import Grid from "@material-ui/core/Grid";
 import Bioinfo from "./BioInfo";
