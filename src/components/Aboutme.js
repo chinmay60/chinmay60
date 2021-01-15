@@ -44,7 +44,7 @@ const useStyles = makeStyles({
     alignSelf: "flex-start",
   },
   media: {
-    height: 140,
+    height: 135,
   },
 
   smallIcon: {
@@ -55,7 +55,7 @@ const useStyles = makeStyles({
     height: 170,
   },
   avatar: {
-    paddingTop: 1,
+   
 
     width: 120,
     height: 120,
