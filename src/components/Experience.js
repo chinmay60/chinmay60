@@ -15,11 +15,11 @@ export default function FullWidthGrid(props) {
       <Grid
         item
         xs={12}
-        style={{ color: "#F5F5F5", marginTop: "5%", fontFamily: "Roboto" }}
+        style={{ color: "#F5F5F5", marginTop: "3%", fontFamily: "Roboto" }}
       >
         <Typography variant="h5" component="h5">
-          <span> Software Engineer Intern - CloudChef</span>
-          <span style={{ color: "#F5F5F5", fontSize: 15, paddingLeft: 5 }}>
+          <span> Software Engineer Intern - CloudChef </span>
+          <span style={{ color: "#F5F5F5", fontSize: 15, marginLeft: 5 }}>
             (Dec 2018 – Feb 2019)
           </span>
         </Typography>
@@ -77,7 +77,7 @@ export default function FullWidthGrid(props) {
             {" "}
             Full Stack Developer Intern - DY Patil University{" "}
           </span>
-          <span style={{ color: "#F5F5F5", fontSize: 15, paddingLeft: 5 }}>
+          <span style={{ color: "#F5F5F5", fontSize: 15, marginLeft: 5 }}>
             (June 2017 – May 2019)
           </span>
         </Typography>

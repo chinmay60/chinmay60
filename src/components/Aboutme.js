@@ -16,7 +16,6 @@ import Avatar from "@material-ui/core/Avatar";
 import { LinearProgress } from "@material-ui/core";
 import LazyLoad from "react-lazyload";
 
-
 const theme = createMuiTheme({
   palette: {
     primary: {
@@ -43,9 +42,6 @@ const useStyles = makeStyles({
     backgroundColor: "#2b2d2d",
     alignSelf: "flex-start",
   },
-  media: {xxxxxxxxxx
-  },
-
   smallIcon: {
     width: 2,
     height: 2,
@@ -54,8 +50,6 @@ const useStyles = makeStyles({
     height: 170,
   },
   avatar: {
-   
-
     width: 120,
     height: 120,
     margin: "auto",
@@ -156,9 +150,8 @@ export default function MediaCard(props) {
             })}
           </div>
           <LazyLoad height={120} once={true} placeholder={<LinearProgress />}>
-          <Avatar className={classes.avatar} src={props.avatarUrl} />
+            <Avatar className={classes.avatar} src={props.avatarUrl} />
           </LazyLoad>
-          
         </CardActionArea>
 
         <CardActionArea

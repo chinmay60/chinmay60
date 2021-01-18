@@ -66,13 +66,15 @@ export default function RecipeReviewCard(props) {
             between. <br />
             <br />
             Using technology to solve problems in the real world is something
-            I'm passionate about. I have experience working as a full-stack
-            developer using languages like TypeScript/Javascript with
-            React/Redux on the front end and Python, ExpressJs/NodeJS at the
-            back end. I have also built desktop and productivity applications
-            working with C++. <br />
+            I'm passionate about. An experienced full-stack developer working
+            with languages like TypeScript/Javascript with React/Redux on the
+            front end and Python, ExpressJs/NodeJS at the back end, I have also
+            built desktop and productivity applications in C++. <br />
             <br />
-            My six-year background in Software Development with a Master's degree in Computer Science gave me a fundamental understanding of System Design and allows me to quickly grasp and adapt to new technology. 
+            My six-year background in Software Development with a Master's
+            degree in Computer Science gives me a fundamental understanding of
+            System Design and allows me to quickly grasp and adapt to new
+            technology.
           </Typography>
 
           <CardActions style={{ padding: 0 }}>
@@ -118,8 +120,8 @@ export default function RecipeReviewCard(props) {
                       written in C++. I taught myself Python and started
                       building utility/productivity applications for general
                       use. I graduated with a Bachelor of Engineering in
-                      Information Technology and went on to pursue my master's at the University of
-                      Cincinnati.
+                      Information Technology and went on to pursue my master's
+                      at the University of Cincinnati.
                       <div
                         style={{
                           display: "flex",
