@@ -43,8 +43,7 @@ const useStyles = makeStyles({
     backgroundColor: "#2b2d2d",
     alignSelf: "flex-start",
   },
-  media: {
-    height: 135,
+  media: {xxxxxxxxxx
   },
 
   smallIcon: {
